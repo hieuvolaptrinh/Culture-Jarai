@@ -26,10 +26,11 @@ const exhibitDetails: Record<
       image: string;
       title: string;
     }>;
+    summary?: string;
   }
 > = {
   "ca-dao": {
-    title: "Ca Dao Jrai",
+    title: "Ca dao của người Jrai",
     description: "Vẻ đẹp mộc mạc, sâu sắc trong lời ca dân gian của người Jrai",
     fullDescription:
       "Ca dao của người Jrai phản ánh triết lý sống, kinh nghiệm lao động và tình cảm giữa con người với thiên nhiên hùng vĩ. Những câu ca truyền miệng qua bao thế hệ vừa giản dị, vừa chứa đựng chiều sâu nhân văn, thể hiện tâm hồn và bản sắc văn hóa độc đáo của dân tộc Jrai.",
@@ -37,38 +38,69 @@ const exhibitDetails: Record<
     sections: [
       {
         title: "Ca dao về gia đình",
-        content: `Ca dao Jrai về gia đình thường nhấn mạnh lòng biết ơn cha mẹ và giá trị của lao động. Ví dụ như câu:<br/><br/>'po tao nai ami<br/>
+        content: `Ca dao Jrai về gia đình thường nhấn mạnh lòng biết ơn cha mẹ và giá trị của lao động. Ví dụ như câu:<br/><br/>
+        <div style="display: grid;gap: 1rem;grid-template-columns: 1fr 1fr;">
+          <div>
+          'po tao nai ami<br/>
 Po tao nao ama<br/>
 H' dong nai h' dong kha<br/>
-Bơ nai bơr miêng' <br/> <br/>(Cây lúa của mẹ<br/>
+Bơ nai bơr miêng'
+          </div>
+          <div>
+          (Cây lúa của mẹ<br/>
 Cây lúa của cha<br/>
 Ruộng đồng là ruộng quý<br/>
-Cỏ cây là quà thiên nhiên) thể hiện sự trân trọng công lao của đấng sinh thành và ý thức gìn giữ truyền thống lao động.`,
+Cỏ cây là quà thiên nhiên) 
+          </div>
+        </div>
+        <br/>
+         Thể hiện sự trân trọng công lao của đấng sinh thành và ý thức gìn giữ truyền thống lao động.`,
         image: "/images/cadao/ca-dao-family.jpeg",
       },
       {
         title: "Ca dao về kinh nghiệm sống",
-        content:
-          "Những câu ca như <br/><br/> 'Yang cho ho khơn, cho khơn cho pian' (Ruộng cho lúa, lúa cho người) thể hiện triết lý lao động cần cù và tinh thần tôn trọng thành quả làm ra. Ca dao Jrai truyền dạy đạo lý tiết kiệm, siêng năng và biết ơn thiên nhiên.",
-        image: "/ca-dao-life.jpg",
+        content: `Những câu ca như <br/><br/> 
+          <div style="display: grid;gap: 1rem;grid-template-columns: 1fr 1fr;">
+          <div>
+          'Dleh Ngă hmă hmão pơdai <br/>
+Dleh hiu dlai Kah hmâo hlâ<br/>
+Dleh hiu mớdrô Kah hmào ngan.<br/>
+Dleh tơgan ngã Kah hmão băng.<br/>
+Dleh rơKông phat phai Kah posir Kơ đi.'
+          </div>
+          <div>
+          (Siêng làm rẫy mới có lúa
+<br/>
+Siêng đi săn mới có thú
+<br/>
+Siêng làm ăn mới có của.
+<br/>
+Mỏi tay làm mới có
+<br/>
+Khô cổ bàn mới xong việc
+) 
+          </div>
+        </div>
+        <br/> Thể hiện triết lý lao động cần cù và tinh thần tôn trọng thành quả làm ra. Ca dao Jrai truyền dạy đạo lý tiết kiệm, siêng năng và biết ơn thiên nhiên.`,
+        image: "/images/cadao/ca-dao-life.jpg",
       },
       {
         title: "Ca dao dân gian & lễ hội",
         content:
           "Các bài ca dân gian mô tả sinh hoạt và lễ hội cồng chiêng, phản ánh nhịp sống buôn làng và niềm vui lao động. Ví dụ: 'Gơ sang chiêng pơ hlâm, pơ sang hlâm pơ ting' – cồng vang xa, chiêng gọi gần – miêu tả không khí rộn ràng của ngày hội Jrai.",
-        image: "/ca-dao-festival.jpg",
+        image: "/images/cadao/ca-dao-festival.jpg",
       },
       {
         title: "Ca dao về thiên nhiên",
         content:
           "Người Jrai xem thiên nhiên là bạn đồng hành. Những câu ca như 'Ai yang ai tơng ia, ai tơng ia ai yang' (Nước nuôi cây, cây giữ nước) thể hiện mối quan hệ hài hòa giữa con người và môi trường – một triết lý sống xanh, bền vững từ bao đời.",
-        image: "/ca-dao-nature.jpg",
+        image: "/images/cadao/ca-dao-nature.jpg",
       },
       {
         title: "Ca dao về tình yêu đôi lứa",
         content:
           "Ca dao tình yêu của người Jrai thường mộc mạc nhưng sâu lắng, ca ngợi sự thủy chung và son sắt. Những lời ca kể về tình yêu xa cách, nỗi nhớ và niềm tin gặp lại, phản ánh vẻ đẹp trong sáng, chân thành của tâm hồn Jrai.",
-        image: "/ca-dao-love.jpg",
+        image: "/images/cadao/ca-dao-love.jpg",
       },
     ],
     gallery: [
@@ -80,151 +112,201 @@ Cỏ cây là quà thiên nhiên) thể hiện sự trân trọng công lao củ
     ],
   },
   "tuc-ngu": {
-    title: "Modern Sculptures",
-    description: "Contemporary art in motion",
+    title: "Tục ngữ của người Jrai",
+    description:
+      "Những câu nói ngắn gọn, giàu hình ảnh, chứa đựng triết lý sống và kinh nghiệm ứng xử của người Jrai.",
     fullDescription:
-      "Experience the evolution of sculptural art in the modern era. Our collection features works that challenge perception and redefine the boundaries of three-dimensional artistic expression.",
-    heroImage: "/modern-sculpture-art.jpg",
+      "Tục ngữ Jrai là kho tàng tri thức dân gian quý giá, phản ánh thế giới quan, nhân sinh quan và mối quan hệ hài hòa giữa con người với thiên nhiên. Dưới đây là một số nhóm tục ngữ tiêu biểu được sưu tầm và lưu giữ.",
+    heroImage: "/images/tucngu.jpg",
     sections: [
       {
-        title: "Abstract Forms",
-        content:
-          "Explore sculptures that break free from traditional representation, using geometric shapes and innovative materials to create thought-provoking installations.",
-        image: "/modern-sculpture-art.jpg",
+        title: "Tục ngữ về gia đình",
+        content: `
+      <div>
+        1. “Ama ia, ama hluh”<br/>
+        <i>Dịch:</i> Nước là cha, lửa là cha.<br/><br/>
+        2. “Agong dơi dơi alinh lẽ ngăn”<br/>
+        <i>Dịch:</i> Anh em như thể tay chân.<br/>
+        <i>Ý nghĩa:</i> Thể hiện tinh thần đoàn kết, gắn bó giữa anh em ruột thịt trong gia đình.
+      </div>
+      `,
+        image: "/images/tucngu/family-jrai.jpg",
       },
       {
-        title: "Interactive Pieces",
-        content:
-          "Engage with sculptures designed for interaction, where movement and viewer participation become integral parts of the artistic experience.",
-        image: "/interactive-sculpture.jpg",
+        title: "Tục ngữ về kinh nghiệm sống",
+        content: `
+      <div>
+        1. “Ngã dleh, rơ beh bong”<br/>
+        <i>Dịch:</i> Làm mệt mới có ăn.<br/>
+        <i>Ý nghĩa:</i> Đề cao lao động, tinh thần tự lập và siêng năng.<br/><br/>
+        
+        2. “Mã tơn gan apan drơi”<br/>
+        <i>Dịch:</i> Tay bắt mặt mừng.<br/>
+        <i>Ý nghĩa:</i> Nói về niềm vui khi gặp lại người thân quen sau thời gian xa cách.<br/><br/>
+        
+        3. “Kơ yây anet nhu guen tơ pă”<br/>
+        <i>Dịch:</i> Cây bé uốn thẳng.<br/>
+        <i>Ý nghĩa:</i> Dạy con từ thuở còn thơ, như cây non cần được uốn nắn để lớn lên ngay thẳng.<br/><br/>
+        
+        4. “Hrơi hngoan siu ia – Hrơi hoai siu tang”<br/>
+        <i>Dịch:</i> Mang nước trong lòng đất, mọi sự sống đều từ đất mà ra.<br/>
+        <i>Ý nghĩa:</i> Ca ngợi đất đai, nguồn cội và giá trị của thiên nhiên.
+      </div>
+      `,
+        image: "/images/tucngu/life-jrai.jpg",
       },
       {
-        title: "Material Innovation",
-        content:
-          "Discover how contemporary artists push boundaries using unconventional materials, from recycled objects to cutting-edge composites.",
-        image: "/modern-sculpture-materials.jpg",
+        title: "Tục ngữ dân gian",
+        content: `
+      <div>
+        1. “Hlang ia tơ đeh, h’lang pơ tao kơ niê”<br/>
+        <i>Dịch:</i> Suối có nguồn, làng có chủ.<br/><br/>
+        
+        2. “Kon chim mầu, gu mạ nui mâu plơi”<br/>
+        <i>Dịch:</i> Chim có tổ, con người có làng.<br/><br/>
+        
+        3. “Amania a nai, ama phă ia pơm”<br/>
+        <i>Ý nghĩa:</i> Biết trân trọng nguồn nước và đất đai – nền tảng của sự sống và sinh tồn.
+      </div>
+      `,
+        image: "/images/tucngu/folk-jrai.jpg",
       },
     ],
     gallery: [
-      { image: "/modern-sculpture-art.jpg", title: "Abstract Form" },
-      { image: "/sculpture-1.jpg", title: "Geometric Sculpture" },
-      { image: "/sculpture-2.jpg", title: "Interactive Installation" },
-      { image: "/sculpture-3.jpg", title: "Material Study" },
+      { image: "/images/family-jrai.jpg", title: "Tục ngữ về gia đình" },
+      { image: "/images/life-jrai.jpg", title: "Tục ngữ về kinh nghiệm sống" },
+      { image: "/images/folk-jrai.jpg", title: "Tục ngữ dân gian" },
+      { image: "/images/jrai-culture.jpg", title: "Văn hóa Jrai" },
     ],
+    summary: `Tục ngữ của người Gia Rai thường phản ánh kinh nghiệm sống triết lý ứng xử và mối quan hệ của họ với thiên nhiên xã hội
+<br/>
+Bài tục ngữ không chỉ mang lại giá trị văn học mà còn góp phần bảo tồn bản sắc văn hóa độc đáo của người Gia Rai trên mảnh đất Gia Lai.
+`,
   },
   "truyen-dan-gian": {
-    title: "Digital Installations",
-    description: "Interactive experiences and immersive tech",
+    title: "Truyện dân gian của người Jrai",
+    description:
+      "Những câu chuyện truyền miệng qua nhiều thế hệ, phản ánh thế giới quan, niềm tin và trí tưởng tượng phong phú của người Jrai.",
     fullDescription:
-      "Step into the future of art with our digital installations. These immersive experiences blend technology, light, and sound to create unforgettable moments.",
-    heroImage: "/digital-art-installation.png",
+      "Truyện dân gian của người Jrai thường mang đậm màu sắc huyền ảo, chứa đựng yếu tố thần thoại, siêu nhiên, nhưng vẫn phản ánh sâu sắc đạo đức, triết lý sống và tình cảm con người. Các câu chuyện được lưu truyền qua lời kể, là một phần quan trọng trong việc bảo tồn bản sắc văn hóa Jrai.",
+    heroImage: "/images/truyeb.jpg",
     sections: [
       {
-        title: "Light & Sound",
-        content:
-          "Experience installations that combine synchronized light patterns with ambient soundscapes, creating multisensory artistic experiences.",
-        image: "/digital-art-installation.png",
+        title: "Giới thiệu chung",
+        content: `
+      Các thể loại truyện dân gian của người Jrai được biết đến với phong cách mộc mạc, gần gũi nhưng sâu sắc và giàu tính nhân văn.<br/><br/>
+      Những câu chuyện này thường mang yếu tố kỳ ảo, thần thoại, phép thuật — phản ánh niềm tin của con người về thế giới tự nhiên và sức mạnh của các vị thần.<br/><br/>
+      Truyện dân gian Jrai bao gồm nhiều thể loại như:<br/>
+      - Truyện cổ tích<br/>
+      - Truyện truyền thuyết<br/>
+      - Sự tích<br/>
+      - Tản văn
+      `,
+        image: "/images/truyen/jrai-forest.jpg",
       },
       {
-        title: "Virtual Reality",
-        content:
-          "Immerse yourself in virtual worlds created by contemporary digital artists, where imagination becomes tangible reality.",
-        image: "/virtual-reality-art.jpg",
+        title: "Truyện cổ tích",
+        content: `
+      <div id="storyGrid" style="
+            gap: 40px;
+display:grid;
+    max-width: 1440px;
+    margin: 0 auto;
+  ">
+    <!-- 1 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">1. Cây nêu và con ma đói</h3>
+      <img src="/images/truyen/cay-neiu.jpg" alt="Cây nêu và con ma đói" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Ngày xưa, dân làng bị con ma đói quấy phá. Già làng yêu cầu mọi người dựng cây nêu trước nhà, treo lá cây và ống tre tạo tiếng động khiến con ma tưởng là thần linh bảo vệ nên bỏ đi. Từ đó phong tục dựng cây nêu vẫn được giữ đến nay.
+      </p>
+    </div>
+
+    <!-- 2 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">2. Chàng trai và cồng chiêng thần</h3>
+      <img src="/images/truyen/cong-chieng.jpg" alt="Chàng trai và cồng chiêng thần" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Một chàng trai nghèo được thần ban cho chiếc cồng chiêng kỳ diệu. Âm thanh của nó mang lại mùa màng bội thu, nhưng vì lòng kiêu ngạo, chàng bị thần thu lại. Câu chuyện dạy con người sự khiêm nhường và tôn trọng điều thiêng liêng.
+      </p>
+    </div>
+
+    <!-- 3 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">3. Di ông lấy Nữ thần Mặt Trời</h3>
+      <img src="/images/truyen/mat-troi.jpg" alt="Di ông lấy Nữ thần Mặt Trời" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Di ông – chàng trai dũng cảm – vượt qua nhiều thử thách để cưới Nữ thần Mặt Trời. Câu chuyện ca ngợi lòng kiên trì, trí thông minh và khát vọng vươn tới ánh sáng — biểu tượng cho niềm tin và tình yêu mãnh liệt.
+      </p>
+    </div>
+
+    <!-- 4 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">4. Đăm Dong đánh thần Sét</h3>
+      <img src="/images/truyen/dam-dong.jpg" alt="Đăm Dong đánh thần Sét" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Khi dân làng bị thần Sét gây hại, chàng trai Đăm Dong dũng cảm chiến đấu để bảo vệ buôn làng. Câu chuyện tôn vinh lòng dũng cảm, tinh thần đoàn kết và niềm tin con người có thể vượt qua thiên nhiên.
+      </p>
+    </div>
+
+    <!-- 5 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">5. Cây nêu thần</h3>
+      <img src="/images/truyen/cay-neu-than.jpg" alt="Cây nêu thần" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Hai vợ chồng nghèo được thần núi ban cây nêu thần – chỉ cần khấn, cây sẽ ban thức ăn. Nhưng người hàng xóm tham lam ăn trộm cây và bị trừng phạt. Câu chuyện thể hiện đạo lý “ở hiền gặp lành”, phê phán lòng tham.
+      </p>
+    </div>
+
+    <!-- 6 -->
+    <div style="background: #fff; border-radius: 18px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+      <h3 style="font-size: 20px; color: #7c4d00; margin-bottom: 15px;">6. Voi thần</h3>
+      <img src="/images/truyen/voi-than.png" alt="Voi thần" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+      <p style="font-size: 15px; line-height: 1.6; color:black">
+        Trong rừng sâu có voi thần bảo vệ dân làng khỏi thú dữ. Khi voi biến mất, dân dựng tượng voi để tưởng nhớ. Câu chuyện thể hiện lòng tôn kính thiên nhiên và niềm tin vào linh hồn bảo hộ của buôn làng.
+      </p>
+    </div>
+  </div>
+      `,
+        image: "/images/truyen/jrai-tale.jpg",
       },
       {
-        title: "Generative Art",
-        content:
-          "Witness art that evolves and changes in real-time, powered by algorithms and artificial intelligence that create ever-unique visual experiences.",
-        image: "/generative-art.jpg",
+        title: "Truyện truyền thuyết",
+        content: `
+      <div>
+        <b>Truyền thuyết “Hoa dã quỳ”</b><br/>
+        Chuyện kể về nàng H’Linh và chàng K’Lang yêu nhau say đắm. Vì ghen tuông, con trai tộc trưởng đã bắn chết họ. Nơi hai người ngã xuống mọc lên loài hoa vàng rực rỡ – hoa dã quỳ. Câu chuyện ca ngợi tình yêu chung thủy, vượt qua ranh giới sinh tử.<br/><br/>
+        <i>Ý nghĩa:</i> Biểu tượng của tình yêu vĩnh cửu và lòng trung thành trong văn hóa Jrai.
+      </div>
+      `,
+        image: "/images/truyen/danquy.jpeg",
+      },
+      {
+        title: "Sự tích núi Chư Đăng Ya",
+        content: `
+      <div>
+        Núi Chư Đăng Ya (huyện Mang Yang, Gia Lai) được kể là nơi diễn ra cuộc chiến giữa anh hùng K’Đu và con rồng độc ác gây hạn hán, lũ lụt. Sau nhiều ngày chiến đấu dữ dội, K’Đu chiến thắng, chôn vùi con rồng dưới đất. Từ đó, ngọn núi hình thành – đỉnh núi giống đầu rồng, còn dung nham hóa thành suối nước nóng.<br/><br/>
+        <i>Ý nghĩa:</i> Tôn vinh tinh thần dũng cảm, lòng nhân nghĩa và niềm tin con người có thể điều hòa thiên nhiên.<br/>
+      </div>
+      `,
+        image: "/images/truyen/chudangya.jpg",
       },
     ],
     gallery: [
-      { image: "/digital-art-installation.png", title: "Light Installation" },
-      { image: "/digital-1.jpg", title: "Sound Visualization" },
-      { image: "/digital-2.jpg", title: "VR Experience" },
-      { image: "/digital-3.jpg", title: "Generative Pattern" },
+      { image: "/images/jrai-tale.jpg", title: "Cây nêu và con ma đói" },
+      { image: "/images/danquy.jpg", title: "Truyền thuyết hoa dã quỳ" },
+      { image: "/images/chudangya.jpg", title: "Sự tích núi Chư Đăng Ya" },
+      { image: "/images/jrai-culture-2.jpg", title: "Văn hóa dân gian Jrai" },
     ],
-  },
-  "renaissance-masters": {
-    title: "Renaissance Masters",
-    description: "Classical paintings and techniques",
-    fullDescription:
-      "Celebrate the golden age of art with works from the Renaissance masters. These paintings represent the pinnacle of classical technique and artistic vision.",
-    heroImage: "/renaissance-painting-art.jpg",
-    sections: [
-      {
-        title: "Oil Painting Mastery",
-        content:
-          "Explore the revolutionary oil painting techniques that allowed Renaissance artists to achieve unprecedented depth, color, and realism.",
-        image: "/renaissance-painting-art.jpg",
-      },
-      {
-        title: "Perspective & Composition",
-        content:
-          "Understand the mathematical principles of perspective that transformed painting, creating the illusion of three-dimensional space on canvas.",
-        image: "/renaissance-perspective.jpg",
-      },
-      {
-        title: "Iconic Works",
-        content:
-          "Admire the most celebrated paintings of the Renaissance period, each a masterpiece of composition, color, and human expression.",
-        image: "/renaissance-masterpiece.jpg",
-      },
-    ],
-    gallery: [
-      {
-        image: "/renaissance-painting-art.jpg",
-        title: "Renaissance Masterpiece",
-      },
-      { image: "/renaissance-1.jpg", title: "Portrait Study" },
-      { image: "/renaissance-2.jpg", title: "Religious Scene" },
-      {
-        image: "/placeholder.svg?height=400&width=400",
-        title: "Landscape Painting",
-      },
-    ],
-  },
-  "contemporary-photography": {
-    title: "Contemporary Photography",
-    description: "Modern visual storytelling",
-    fullDescription:
-      "Discover how contemporary photographers use the camera as a tool for artistic expression, social commentary, and visual storytelling.",
-    heroImage: "/contemporary-photography.jpg",
-    sections: [
-      {
-        title: "Documentary Photography",
-        content:
-          "Experience powerful visual narratives that capture real moments, telling stories of human experience, culture, and social issues.",
-        image: "/contemporary-photography.jpg",
-      },
-      {
-        title: "Conceptual Photography",
-        content:
-          "Explore photographs that transcend documentation, using creative techniques and conceptual frameworks to challenge viewers' perceptions.",
-        image: "/placeholder.svg?height=500&width=800",
-      },
-      {
-        title: "Digital Photography",
-        content:
-          "Witness how digital technology has expanded the possibilities of photography, enabling new forms of manipulation and artistic expression.",
-        image: "/placeholder.svg?height=500&width=800",
-      },
-    ],
-    gallery: [
-      { image: "/contemporary-photography.jpg", title: "Documentary Shot" },
-      {
-        image: "/placeholder.svg?height=400&width=400",
-        title: "Conceptual Work",
-      },
-      {
-        image: "/placeholder.svg?height=400&width=400",
-        title: "Portrait Series",
-      },
-      {
-        image: "/placeholder.svg?height=400&width=400",
-        title: "Landscape Study",
-      },
-    ],
+    summary: `
+    Truyện dân gian của người Jrai phản ánh đời sống, tín ngưỡng, phong tục và cách con người lý giải thế giới tự nhiên.<br/><br/>
+      Nhiều câu chuyện gắn liền với các lễ hội, nghi lễ và sự tích địa danh như Chư Đăng Ya, cây nêu thần, cồng chiêng thần,...<br/><br/>
+      Dù mang yếu tố kỳ ảo, truyện vẫn truyền tải bài học đạo đức sâu sắc: lòng nhân hậu, tinh thần đoàn kết, sự dũng cảm và niềm tin vào sức mạnh của con người.<br/><br/>
+      Đây là di sản tinh thần quý báu, góp phần bảo tồn bản sắc văn hóa độc đáo của người Jrai trên cao nguyên Gia Lai.<br/>
+  Truyện dân gian của người Jrai là kho tàng tri thức dân gian chứa đựng niềm tin, trí tưởng tượng và triết lý sống của cộng đồng.
+  <br/><br/>
+  Thông qua các câu chuyện về anh hùng, thần linh và tình yêu, người Jrai thể hiện khát vọng sống hòa hợp với thiên nhiên và tôn vinh giá trị con người.
+  `,
   },
 };
 
@@ -255,7 +337,7 @@ export default function ExhibitDetailPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
           <motion.div
-            className="relative z-10 px-8 md:px-16 pb-20 max-w-7xl w-full"
+            className="relative z-10 px-8 md:px-16 pb-20 max-w-4xl w-full"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -269,7 +351,7 @@ export default function ExhibitDetailPage() {
           </motion.div>
         </section>
 
-        <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto">
+        <section className="px-8 md:px-16 py-32 max-w-[1440px] mx-auto">
           <motion.div
             className="space-y-32"
             initial="hidden"
@@ -286,7 +368,13 @@ export default function ExhibitDetailPage() {
                     title={section.title}
                   />
 
-                  <div className="grid md:grid-cols-2 gap-16 items-center">
+                  <div
+                    className={`grid ${
+                      section.title === "Truyện cổ tích"
+                        ? "md:grid-cols-1"
+                        : "md:grid-cols-2"
+                    } gap-16 items-center`}
+                  >
                     {/* Content Left / Image Right */}
                     {isEven ? (
                       <>
@@ -389,48 +477,31 @@ export default function ExhibitDetailPage() {
           </motion.div>
         </section>
 
-        <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto border-t border-white/10">
+        {/* <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto border-t border-white/10">
           <SectionHeader
             number="04"
             title="Gallery"
             subtitle="Explore our complete collection"
           />
           <HorizontalScrollGallery items={exhibit.gallery} />
-        </section>
+        </section> */}
 
-        <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto border-t border-white/10">
-          <SectionHeader number="05" title="More Exhibits" />
+        <section className="px-8 md:px-16 py-32 max-w-[1440px] mx-auto border-t border-white/10">
+          <SectionHeader title="Tổng kết" />
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className=""
             initial="hidden"
             whileInView="visible"
             variants={staggerContainerVariants}
             viewport={{ once: true, margin: "-100px" }}
           >
-            {[1, 2, 3].map((i) => (
-              <motion.a
-                key={i}
-                href="#"
-                className="group"
-                variants={staggerItemVariants}
-              >
-                <div className="relative h-64 rounded-lg overflow-hidden mb-4">
-                  <div className="w-full h-full bg-white/5 group-hover:bg-white/10 transition-colors" />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
-                      <div className="w-0 h-0 border-l-5 border-l-white border-t-3 border-t-transparent border-b-3 border-b-transparent ml-1" />
-                    </div>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold group-hover:text-gold transition-colors">
-                  Related Exhibit {i}
-                </h3>
-                <p className="text-white/60 text-sm mt-2">
-                  Discover more collections
-                </p>
-              </motion.a>
-            ))}
+            <p
+              className="text-white/60 text-xl mt-2"
+              dangerouslySetInnerHTML={{
+                __html: exhibit.summary ?? "",
+              }}
+            ></p>
           </motion.div>
         </section>
       </main>

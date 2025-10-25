@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { PageTransition } from "@/components/page-transition"
@@ -41,15 +40,16 @@ export default function ContactPage() {
   }
 
   const contactInfo = [
-    { title: "Email", value: "hello@digitalmuseum.com" },
-    { title: "Phone", value: "+1 (555) 123-4567" },
-    { title: "Location", value: "San Francisco, CA" },
-    { title: "Hours", value: "24/7 Online Access" },
+    { title: "Người liên hệ", value: "Đinh Đức Anh – 0394 834 694" },
+    { title: "Người liên hệ", value: "Rơ Lan H’Rê Ny – 0362 745 894" },
+    { title: "Email", value: "baotangjrai@museum.vn" },
+    { title: "Địa điểm", value: "Pleiku, Gia Lai – Việt Nam" },
   ]
 
   return (
     <PageTransition>
       <main className="min-h-screen bg-black text-white">
+        {/* --- HERO --- */}
         <section className="relative h-96 flex items-center px-8 md:px-16 overflow-hidden border-b border-white/10">
           <motion.div
             className="max-w-4xl"
@@ -57,13 +57,17 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-7xl md:text-8xl font-bold border-b-4 border-gold pb-6 inline-block">Get In Touch</h1>
-            <p className="text-xl text-white/70 mt-8 max-w-2xl">
-              Have questions about our exhibits or want to collaborate? We'd love to hear from you.
+            <h1 className="text-6xl md:text-7xl font-bold border-b-4 border-gold pb-6 inline-block">
+              Liên hệ
+            </h1>
+            <p className="text-lg text-white/70 mt-8 max-w-2xl leading-relaxed">
+              Nếu bạn có thắc mắc, mong muốn hợp tác hoặc đóng góp tư liệu cho dự án
+              “Bảo tàng Văn học Jrai”, chúng tôi luôn sẵn lòng lắng nghe và đón nhận.
             </p>
           </motion.div>
         </section>
 
+        {/* --- CONTACT INFO --- */}
         <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto border-b border-white/10">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
@@ -82,8 +86,9 @@ export default function ContactPage() {
           </motion.div>
         </section>
 
+        {/* --- CONTACT FORM --- */}
         <section className="px-8 md:px-16 py-32 max-w-4xl mx-auto border-b border-white/10">
-          <SectionHeader number="01" title="Send a Message" />
+          <SectionHeader number="01" title="Gửi thông điệp" />
 
           <motion.form
             onSubmit={handleSubmit}
@@ -95,7 +100,7 @@ export default function ContactPage() {
           >
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div variants={staggerItemVariants}>
-                <label className="block text-sm font-bold text-gold mb-4">Name</label>
+                <label className="block text-sm font-bold text-gold mb-4">Họ và tên</label>
                 <input
                   type="text"
                   name="name"
@@ -103,7 +108,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
-                  placeholder="Your name"
+                  placeholder="Nhập họ và tên của bạn"
                 />
               </motion.div>
 
@@ -116,13 +121,13 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
-                  placeholder="your@email.com"
+                  placeholder="example@email.com"
                 />
               </motion.div>
             </div>
 
             <motion.div variants={staggerItemVariants}>
-              <label className="block text-sm font-bold text-gold mb-4">Subject</label>
+              <label className="block text-sm font-bold text-gold mb-4">Chủ đề</label>
               <input
                 type="text"
                 name="subject"
@@ -130,12 +135,12 @@ export default function ContactPage() {
                 onChange={handleChange}
                 required
                 className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
-                placeholder="What is this about?"
+                placeholder="Nội dung bạn muốn trao đổi"
               />
             </motion.div>
 
             <motion.div variants={staggerItemVariants}>
-              <label className="block text-sm font-bold text-gold mb-4">Message</label>
+              <label className="block text-sm font-bold text-gold mb-4">Nội dung</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -143,7 +148,7 @@ export default function ContactPage() {
                 required
                 rows={6}
                 className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40 resize-none"
-                placeholder="Tell us more..."
+                placeholder="Viết thông điệp của bạn..."
               />
             </motion.div>
 
@@ -155,11 +160,11 @@ export default function ContactPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Đang gửi..." : "Gửi thông điệp"}
               </motion.button>
             </motion.div>
 
-            {/* Status Messages */}
+            {/* Thông báo trạng thái */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{
@@ -170,20 +175,21 @@ export default function ContactPage() {
             >
               {submitStatus === "success" && (
                 <div className="p-6 rounded-lg border border-gold/50 bg-gold/5 text-gold">
-                  Thank you for your message! We'll get back to you soon.
+                  Cảm ơn bạn đã gửi thông tin! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
                 </div>
               )}
               {submitStatus === "error" && (
                 <div className="p-6 rounded-lg border border-red-500/50 bg-red-500/5 text-red-500">
-                  Something went wrong. Please try again.
+                  Có lỗi xảy ra, vui lòng thử lại sau.
                 </div>
               )}
             </motion.div>
           </motion.form>
         </section>
 
+        {/* --- FAQ --- */}
         <section className="px-8 md:px-16 py-32 max-w-4xl mx-auto">
-          <SectionHeader number="02" title="FAQ" subtitle="Frequently asked questions" />
+          <SectionHeader number="02" title="Câu hỏi thường gặp" subtitle="Giải đáp một số thắc mắc phổ biến" />
 
           <motion.div
             className="space-y-8"
@@ -194,20 +200,20 @@ export default function ContactPage() {
           >
             {[
               {
-                q: "Is the museum free to access?",
-                a: "Yes! Our digital museum is completely free and accessible 24/7 from anywhere in the world.",
+                q: "Bảo tàng có mở cửa cho công chúng tham quan trực tiếp không?",
+                a: "Hiện tại, Bảo tàng Văn học Jrai hoạt động chủ yếu dưới hình thức trực tuyến. Mọi người có thể truy cập website để tìm hiểu, khám phá và đóng góp tư liệu.",
               },
               {
-                q: "Can I use the 3D models for commercial purposes?",
-                a: "Please contact us for licensing information regarding commercial use of our 3D models.",
+                q: "Tôi có thể gửi truyện, thơ hoặc tư liệu dân gian Jrai cho bảo tàng không?",
+                a: "Rất hoan nghênh! Bạn có thể gửi qua biểu mẫu liên hệ hoặc email chính thức của bảo tàng. Mọi đóng góp đều được trân trọng và ghi nhận.",
               },
               {
-                q: "How often are new exhibits added?",
-                a: "We add new exhibits and collections monthly. Subscribe to our newsletter for updates.",
+                q: "Dự án có hợp tác với trường học hay tổ chức văn hóa không?",
+                a: "Chúng tôi sẵn sàng hợp tác với các trường, viện nghiên cứu và tổ chức văn hóa trong công tác sưu tầm, giảng dạy và quảng bá văn học dân gian Jrai.",
               },
               {
-                q: "Do you offer virtual tours?",
-                a: "Yes! We offer guided virtual tours. Check our exhibits page for scheduled tour times.",
+                q: "Có thể sử dụng tư liệu của bảo tàng cho mục đích học tập không?",
+                a: "Hoàn toàn được phép, miễn là ghi rõ nguồn “Bảo tàng Văn học Jrai”. Với mục đích thương mại, vui lòng liên hệ trước để được hướng dẫn cụ thể.",
               },
             ].map((faq, index) => (
               <motion.div

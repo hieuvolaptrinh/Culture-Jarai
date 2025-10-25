@@ -9,27 +9,21 @@ export function Footer() {
 
   const footerLinks = [
     {
-      title: "Explore",
+      title: "Khám phá",
       links: [
-        { label: "Exhibits", href: "/exhibits" },
-        { label: "Gallery", href: "/gallery" },
-        { label: "Collections", href: "/exhibits" },
+        { label: "Di sản văn học", href: "/di-san" },
       ],
     },
     {
-      title: "About",
+      title: "Giới thiệu",
       links: [
-        { label: "Our Story", href: "/about" },
-        { label: "Mission", href: "/about" },
-        { label: "Team", href: "/about" },
+        { label: "Về Bảo tàng Văn học Jrai", href: "/thong-tin" },
       ],
     },
     {
-      title: "Connect",
+      title: "Liên hệ",
       links: [
-        { label: "Contact", href: "/contact" },
-        { label: "Newsletter", href: "/contact" },
-        { label: "Social Media", href: "#" },
+        { label: "Thông tin liên lạc", href: "/lien-he" },
       ],
     },
   ]
@@ -47,16 +41,16 @@ export function Footer() {
           {/* Brand */}
           <motion.div variants={staggerItemVariants}>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-              Digital Museum
+              Bảo tàng Văn học Jrai
             </h3>
             <p className="text-muted-foreground">
-              Immersive experiences through interactive art and motion storytelling.
+              Nơi lưu giữ, bảo tồn và lan tỏa giá trị văn học dân gian Jrai – kho tàng tri thức, tâm hồn và bản sắc văn hóa Tây Nguyên.
             </p>
           </motion.div>
 
           {/* Links */}
           {footerLinks.map((section) => (
-            <motion.div key={section.title} variants={staggerItemVariants}>
+            <div key={section.title} className="text-white">
               <h4 className="font-semibold mb-4">{section.title}</h4>
               <ul className="space-y-2">
                 {section.links.map((link) => (
@@ -67,29 +61,25 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           ))}
         </motion.div>
 
-        {/* Bottom */}
+        {/* Bottom Section */}
         <motion.div
-          className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+          className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <p className="text-muted-foreground text-sm">© {currentYear} Digital Museum. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors text-sm">
-              Privacy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors text-sm">
-              Terms
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-accent transition-colors text-sm">
-              Cookies
-            </a>
+          <p className="text-muted-foreground text-sm">
+            © {currentYear} Bảo tàng Văn học Jrai. Mọi quyền được bảo lưu.
+          </p>
+          <div className="text-muted-foreground text-sm leading-relaxed">
+            <p>📞 Thông tin liên hệ:</p>
+            <p>Đinh Đức Anh – 0394 834 694</p>
+            <p>Rơ Lan H’ Rê Ny – 0362 745 894</p>
           </div>
         </motion.div>
       </div>

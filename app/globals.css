@@ -198,3 +198,33 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #storyGrid {
+    gap: 24px !important;
+    grid-template-columns: auto !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #storyGrid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    gap: 30px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #storyGrid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 40px !important;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  #storyGrid {
+    display: grid !important; 
+    gap: 40px !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  }
+}

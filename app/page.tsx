@@ -86,7 +86,7 @@ export default function Home() {
                     Khám phá
                   </motion.button>
                 </Link>
-                <Link href="/about">
+                <Link href="/thong-tin">
                   <motion.button
                     className="px-8 py-4 border border-white text-white font-semibold text-sm tracking-wide hover:bg-white/10 transition-colors"
                     whileHover={{ scale: 1.02 }}
@@ -284,7 +284,7 @@ export default function Home() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Bắt đầu hành trình khám giá nào
+                    Bắt đầu hành trình khám phá nào
                   </motion.button>
                 </Link>
               </motion.div>

@@ -8,8 +8,8 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
+    { label: "Thông tin về bảo tàng", href: "/thong-tin" },
     { label: "Các di sản", href: "/di-san" },
-    { label: "Thông tin", href: "/thong-tin" },
     { label: "Liên lạc", href: "/lien-he" },
   ]
 
@@ -18,7 +18,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex items-center justify-between">
         <Link href="/">
           <motion.div className="text-xl font-semibold tracking-widest text-foreground" whileHover={{ opacity: 0.7 }}>
-            JRAI ETHNIC MUSUME
+            BẢO TÀNG VĂN HỌC NGƯỜI JRAI
           </motion.div>
         </Link>
 
