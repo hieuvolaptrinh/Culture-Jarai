@@ -38,22 +38,16 @@ export default function Home() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.8 }}
                 >
-                  01 / Chào mừng đến với
+                  Chào mừng đến với
                 </motion.p>
 
                 <motion.h1
-                  className="text-7xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight text-white"
+                  className="text-7xl md:text-8xl lg:text-7xl font-bold leading-none tracking-tight text-white"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                  Bảo Tàng
-                  <br />
-                  <span className="border-b-4 border-primary pb-4">
-                    Văn Học
-                  </span>
-                  <br />
-                  Jrai
+                  Bảo Tàng Văn Học Jrai
                 </motion.h1>
               </div>
 
@@ -128,7 +122,7 @@ export default function Home() {
         </section>
 
         {/* ========== EXHIBIT SECTIONS ========== */}
-        {/* <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
+        <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="space-y-32">
             {[
               {
@@ -224,8 +218,8 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </section> */}
-        <JraiLifeSection/>
+        </section>
+        <JraiLifeSection />
 
         {/* ========== CLOSING SECTION ========== */}
         <section className="py-32 px-4 md:px-8 border-t border-border">

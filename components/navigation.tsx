@@ -1,23 +1,27 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { useState } from "react"
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { label: "Thông tin về bảo tàng", href: "/thong-tin" },
     { label: "Các di sản", href: "/di-san" },
+    { label: "Tìm hiểu thêm", href: "/thong-tin" },
     { label: "Liên lạc", href: "/lien-he" },
-  ]
+  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 flex items-center justify-between">
         <Link href="/">
-          <motion.div className="text-xl font-semibold tracking-widest text-foreground" whileHover={{ opacity: 0.7 }}>
+          <motion.div
+            className="text-xl font-semibold tracking-widest text-foreground"
+            whileHover={{ opacity: 0.7 }}
+          >
             BẢO TÀNG VĂN HỌC NGƯỜI JRAI
           </motion.div>
         </Link>
@@ -46,7 +50,10 @@ export function Navigation() {
             className="w-5 h-px bg-foreground"
             animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
           />
-          <motion.div className="w-5 h-px bg-foreground" animate={isOpen ? { opacity: 0 } : { opacity: 1 }} />
+          <motion.div
+            className="w-5 h-px bg-foreground"
+            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+          />
           <motion.div
             className="w-5 h-px bg-foreground"
             animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
@@ -57,12 +64,18 @@ export function Navigation() {
         <motion.div
           className="absolute top-full left-0 right-0 bg-background border-b border-border md:hidden"
           initial={{ opacity: 0, height: 0 }}
-          animate={isOpen ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }}
+          animate={
+            isOpen ? { opacity: 1, height: "auto" } : { opacity: 0, height: 0 }
+          }
           transition={{ duration: 0.3 }}
         >
           <div className="flex flex-col gap-6 p-6">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)}>
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+              >
                 <span className="text-sm font-light tracking-wide text-foreground hover:text-primary transition-colors">
                   {item.label}
                 </span>
@@ -72,5 +85,5 @@ export function Navigation() {
         </motion.div>
       </div>
     </nav>
-  )
+  );
 }
