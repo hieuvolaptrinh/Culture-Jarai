@@ -48,7 +48,7 @@ export default function ContactPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen bg-background text-foreground">
         {/* --- HERO --- */}
         <section className="relative h-96 flex items-center px-8 md:px-16 overflow-hidden border-b border-white/10">
           <motion.div
@@ -60,7 +60,7 @@ export default function ContactPage() {
             <h1 className="text-6xl md:text-7xl font-bold border-b-4 border-gold pb-6 inline-block">
               Liên hệ
             </h1>
-            <p className="text-lg text-white/70 mt-8 max-w-2xl leading-relaxed">
+            <p className="text-lg text-foreground mt-8 max-w-2xl leading-relaxed">
               Nếu bạn có thắc mắc, mong muốn hợp tác hoặc đóng góp tư liệu cho dự án
               “Bảo tàng Văn học Jrai”, chúng tôi luôn sẵn lòng lắng nghe và đón nhận.
             </p>
@@ -80,7 +80,7 @@ export default function ContactPage() {
               <motion.div key={index} className="border-l-2 border-gold pl-8 py-4" variants={staggerItemVariants}>
                 <p className="text-gold font-bold text-sm mb-3">{String(index + 1).padStart(2, "0")}</p>
                 <h3 className="text-lg font-bold mb-2">{info.title}</h3>
-                <p className="text-white/70">{info.value}</p>
+                <p className="text-foreground">{info.value}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
+                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
                   placeholder="Nhập họ và tên của bạn"
                 />
               </motion.div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
+                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
                   placeholder="example@email.com"
                 />
               </motion.div>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40"
+                className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
                 placeholder="Nội dung bạn muốn trao đổi"
               />
             </motion.div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-white placeholder:text-white/40 resize-none"
+                className="w-full px-0 py-3 bg-transparent border-b border-foreground focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40 resize-none"
                 placeholder="Viết thông điệp của bạn..."
               />
             </motion.div>
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 variants={staggerItemVariants}
               >
                 <h3 className="text-xl font-bold mb-4 text-gold">{faq.q}</h3>
-                <p className="text-white/70 leading-relaxed">{faq.a}</p>
+                <p className="text-foreground/70 leading-relaxed">{faq.a}</p>
               </motion.div>
             ))}
           </motion.div>

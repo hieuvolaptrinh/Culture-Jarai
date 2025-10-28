@@ -103,6 +103,9 @@ Khô cổ bàn mới xong việc
         image: "/images/cadao/ca-dao-love.jpg",
       },
     ],
+    summary:`Người Jrai có những bài ca dao mang đậm nét đặc trưng văn hóa của mình và thường thể hiện tình yêu thương đất nước thiên nhiên và những bài học trong cuộc sống mà ông cha ta truyền lại.
+<br/>
+    Bài ca dao không chỉ mang lại giá trị văn học mà còn góp phần bảo tồn bản sắc văn hóa độc đáo của người Jrai trên mảnh đất Gia Lai.`,
     gallery: [
       { image: "/ca-dao-family.jpg", title: "Ca dao về gia đình" },
       { image: "/ca-dao-life.jpg", title: "Ca dao về kinh nghiệm sống" },
@@ -327,7 +330,7 @@ export default function ExhibitDetailPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-black text-white">
+      <main className="min-h-screen bg-background text-foreground">
         <section className="relative h-screen flex items-end overflow-hidden">
           <img
             src={exhibit.heroImage || "/placeholder.svg"}
@@ -385,7 +388,7 @@ export default function ExhibitDetailPage() {
                           viewport={{ once: true }}
                         >
                           <p
-                            className="text-lg text-white/70 leading-relaxed mb-8"
+                            className="text-lg text-foreground leading-relaxed mb-8"
                             dangerouslySetInnerHTML={{
                               __html: section.content,
                             }}
@@ -455,7 +458,7 @@ export default function ExhibitDetailPage() {
                           viewport={{ once: true }}
                         >
                           <p
-                            className="text-lg text-white/70 leading-relaxed mb-8"
+                            className="text-lg text-foreground leading-relaxed mb-8"
                             dangerouslySetInnerHTML={{
                               __html: section.content,
                             }}
@@ -497,7 +500,7 @@ export default function ExhibitDetailPage() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <p
-              className="text-white/60 text-xl mt-2"
+              className="text-foreground text-xl mt-2"
               dangerouslySetInnerHTML={{
                 __html: exhibit.summary ?? "",
               }}

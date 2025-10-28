@@ -4,22 +4,24 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { PageTransition } from "@/components/page-transition";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import JraiLifeSection from "@/components/JraiLife";
 
 export default function Home() {
   return (
     <PageTransition>
       <main className="min-h-screen bg-background text-foreground overflow-hidden">
+        {/* ========== HERO SECTION ========== */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16">
           {/* Background image */}
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/dangianjraibahnar.jpg')", // ✅ Put image in /public/images
+              backgroundImage: "url('/images/dangianjraibahnar.jpg')",
             }}
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
 
           {/* Content */}
           <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 w-full">
@@ -31,12 +33,12 @@ export default function Home() {
             >
               <div className="space-y-4">
                 <motion.p
-                  className="text-sm font-light tracking-widest text-gray-300"
+                  className="text-sm font-light tracking-widest text-gray-300 uppercase"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2, duration: 0.8 }}
                 >
-                  01 / Chào Mừng Đến Với
+                  01 / Chào mừng đến với
                 </motion.p>
 
                 <motion.h1
@@ -56,19 +58,18 @@ export default function Home() {
               </div>
 
               <motion.p
-                className="text-md md:text-lg font-light text-gray-200 max-w-5xl leading-relaxed"
+                className="text-md md:text-lg font-light text-gray-200 max-w-4xl leading-relaxed"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Văn học dân gian Jrai – những câu chuyện và lời kể truyền miệng
-                qua bao thế hệ – đang dần bị lãng quên giữa nhịp sống hiện đại.
-                Từ trăn trở ấy, dự án “Bảo tàng Văn học Jrai” ra đời với mục
-                tiêu sưu tầm, lưu giữ và lan tỏa kho tàng văn học dân gian trên
-                nền tảng số. Dù gặp nhiều khó khăn về tư liệu và nhận thức cộng
-                đồng, dự án vẫn nỗ lực trở thành cầu nối văn hóa, giúp học sinh
-                và người dân hiểu, trân trọng và tự hào hơn về di sản tinh thần
-                của dân tộc Jrai.{" "}
+                Từ miền đất gió Lào và nắng cao nguyên, dân tộc Jrai đã dệt nên
+                kho tàng văn học dân gian phong phú – từ ca dao, tục ngữ đến
+                truyện kể và sử thi. Những lời ca, tiếng hát, câu nói vần ấy đã
+                nuôi dưỡng tâm hồn bao thế hệ, phản ánh tình yêu thiên nhiên,
+                lao động và con người. “Bảo tàng Văn học Jrai” ra đời nhằm lưu
+                giữ, số hóa và lan tỏa di sản ngôn từ ấy trong không gian hiện
+                đại, giúp người trẻ tìm lại mạch nguồn văn hóa của mình.
               </motion.p>
 
               <motion.div
@@ -83,7 +84,7 @@ export default function Home() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Khám phá
+                    Khám phá di sản
                   </motion.button>
                 </Link>
                 <Link href="/thong-tin">
@@ -99,7 +100,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Scroll Indicator */}
+          {/* Scroll indicator */}
           <motion.div
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
             animate={{ y: [0, 12, 0] }}
@@ -126,28 +127,29 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
+        {/* ========== EXHIBIT SECTIONS ========== */}
+        {/* <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="space-y-32">
             {[
               {
                 number: "02",
-                title: "Ca dao của người Jrai",
+                title: "Ca dao Jrai",
                 description:
-                  "Ca dao của người Jrai phản ánh triết lý sống, kinh nghiệm lao động, về mối quan hệ giữa con người với thiên nhiên hùng vĩ.",
+                  "Những bài ca mộc mạc, giàu hình ảnh và nhạc tính, thể hiện tình yêu quê hương, lao động và triết lý sống gắn bó với núi rừng. Mỗi lời ca là một khúc tâm tình, một cách người Jrai gửi gắm niềm tin và khát vọng.",
                 image: "/images/tho.jpg",
               },
               {
                 number: "03",
-                title: "Tục ngữ của người Jrai",
+                title: "Tục ngữ Jrai",
                 description:
-                  "Thể loại sưu tầm tục ngữ thương là những câu nói ngắn gọn súc tích chứ đựng triết lý sống kinh nghiệm lao động ứng xử và giáo dục ông cha ta kể lại.",
+                  "Tục ngữ của người Jrai ngắn gọn, sâu sắc, chứa đựng kinh nghiệm lao động và ứng xử. Đó là kho tri thức dân gian kết tinh từ đời sống sản xuất và quan hệ cộng đồng qua bao thế hệ.",
                 image: "/images/tucngu.jpg",
               },
               {
                 number: "04",
-                title: "Truyện dân gian của người Jrai",
+                title: "Truyện dân gian Jrai",
                 description:
-                  "Truyện dân gian Jrai mang phong cách mộc mạc nhưng giàu cảm xúc và nhân văn, thường chứa yếu tố kỳ ảo, siêu nhiên và thần thoại, phản ánh thế giới quan độc đáo của người Jrai.",
+                  "Từ huyền thoại tạo trời đất đến những chuyện tình, chuyện người, truyện dân gian Jrai là tấm gương phản chiếu tâm hồn – nơi cái thiện, cái đẹp và lòng nhân ái luôn được tôn vinh.",
                 image: "/images/truyeb.jpg",
               },
             ].map((exhibit, index) => (
@@ -218,27 +220,14 @@ export default function Home() {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.6 }}
                   />
-                  {/* <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" /> */}
-                  {/* <motion.div
-                    className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
-                      <svg
-                        className="w-6 h-6 text-white ml-1"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </motion.div> */}
                 </motion.div>
               </motion.div>
             ))}
           </div>
-        </section>
+        </section> */}
+        <JraiLifeSection/>
 
+        {/* ========== CLOSING SECTION ========== */}
         <section className="py-32 px-4 md:px-8 border-t border-border">
           <ScrollReveal>
             <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -249,7 +238,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                05 / SẴN SÀNG ĐỂ KHÁM PHÁ
+                05 / HÀNH TRÌNH KẾT NỐI DI SẢN
               </motion.p>
               <motion.h2
                 className="text-6xl md:text-7xl font-bold leading-tight"
@@ -261,7 +250,8 @@ export default function Home() {
                 Giữ hồn văn hóa
                 <br />
                 <span className="border-b-4 border-primary pb-4">
-                Kể chuyện Jrai bằng ánh sáng số</span>
+                  Kể chuyện Jrai bằng ánh sáng số
+                </span>
               </motion.h2>
               <motion.p
                 className="text-lg font-light text-muted-foreground max-w-2xl mx-auto leading-relaxed"
@@ -270,7 +260,9 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Khám phá di sản văn học Jrai qua không gian số – nơi câu chuyện cổ vang vọng trong từng nhịp công nghệ hiện đại
+                Mỗi câu ca, mỗi lời nói vần là một ký ức sống động của dân tộc.
+                Hãy cùng chúng tôi bước vào hành trình gìn giữ và lan tỏa tinh
+                hoa văn học Jrai trong kỷ nguyên kỹ thuật số.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -284,12 +276,17 @@ export default function Home() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Bắt đầu hành trình khám phá nào
+                    Bắt đầu hành trình khám phá
                   </motion.button>
                 </Link>
               </motion.div>
             </div>
           </ScrollReveal>
+
+          <div className="text-center mt-24 text-sm text-muted-foreground">
+            Thông tin liên hệ: Đinh Đức Anh – 0394834694 | Rơ Lan H’ Rê Ny –
+            0362745894
+          </div>
         </section>
       </main>
     </PageTransition>

@@ -50,7 +50,7 @@ export function Footer() {
 
           {/* Links */}
           {footerLinks.map((section) => (
-            <div key={section.title} className="text-white">
+            <div key={section.title} className="text-foreground">
               <h4 className="font-semibold mb-4">{section.title}</h4>
               <ul className="space-y-2">
                 {section.links.map((link) => (
