@@ -26,43 +26,43 @@ export default function Home() {
         {/* ========== HERO SECTION ========== */}
         <section
           ref={heroRef}
-          className="relative h-screen flex items-center justify-center overflow-hidden pt-16"
+          className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
         >
           {/* Background image with parallax */}
           <motion.div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center will-change-transform"
             style={{
               backgroundImage: "url('/images/dangianjraibahnar.jpg')",
               scale,
             }}
           />
 
-          {/* Animated gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-background" />
+          {/* Gradient overlay: Đổi từ đen sang một lớp overlay màu nền nhạt, ấm áp */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background pointer-events-none" />
 
-          {/* Decorative elements */}
+          {/* Ambient glowing orbs: Giữ nguyên hiệu ứng nhưng dùng màu sáng hơn (primary/secondary) */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <motion.div
-              className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
+              className="absolute top-24 right-24 w-72 h-72 bg-primary/20 rounded-full blur-[100px]"
               animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{ duration: 8, repeat: Infinity }}
-            />
-            <motion.div
-              className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"
-              animate={{
-                scale: [1.2, 1, 1.2],
-                opacity: [0.2, 0.4, 0.2],
+                scale: [1, 1.15, 1],
+                opacity: [0.5, 0.7, 0.5], // Tăng opacity vì nền sáng
               }}
               transition={{ duration: 10, repeat: Infinity }}
             />
+            <motion.div
+              className="absolute bottom-24 left-24 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]"
+              animate={{
+                scale: [1.2, 1, 1.2],
+                opacity: [0.4, 0.6, 0.4], // Tăng opacity vì nền sáng
+              }}
+              transition={{ duration: 12, repeat: Infinity }}
+            />
           </div>
 
-          {/* Content */}
+          {/* Main content */}
           <motion.div
-            className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 w-full"
+            className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 w-full text-center md:text-left"
             style={{ opacity }}
           >
             <motion.div
@@ -71,48 +71,53 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="space-y-8"
             >
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.2, duration: 0.8 }}
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2, duration: 0.8 }}
+              >
+                <Badge
+                  variant="outline"
+                  // SỬA MÀU: Dùng border mờ và text primary
+                  className="border-primary/50 text-primary bg-background/50 backdrop-blur-sm px-4 py-2 text-xs tracking-widest"
                 >
-                  <Badge
-                    variant="outline"
-                    className="border-primary/50 text-primary bg-primary/10 backdrop-blur-sm px-4 py-2 text-xs tracking-widest"
-                  >
-                    🏛️ BẢO TÀNG SỐ HÓA
-                  </Badge>
-                </motion.div>
+                  🏛️ BẢO TÀNG SỐ HÓA
+                </Badge>
+              </motion.div>
 
-                <motion.h1
-                  className="text-6xl md:text-8xl lg:text-9xl font-bold leading-none tracking-tight"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.8 }}
-                >
-                  <span className="bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
-                    Bảo Tàng
-                  </span>
-                  <br />
-                  <span className="text-white">Văn Học Jrai</span>
-                </motion.h1>
+              {/* Title */}
+              <motion.h1
+                className="text-5xl md:text-8xl lg:text-9xl font-bold leading-tight tracking-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+              >
+                <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+                  Bảo Tàng
+                </span>
+                <br />
+                {/* SỬA MÀU: Dùng foreground (nâu đậm) thay vì white */}
+                <span className="text-foreground">Văn Học Jrai</span>
+              </motion.h1>
 
-                <motion.div
-                  className="flex items-center gap-3 text-sm text-gray-300"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.4, duration: 0.8 }}
-                >
-                  <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary" />
-                  <span className="tracking-wider">
-                    Giữ hồn văn hóa, kể chuyện Jrai bằng ánh sáng số
-                  </span>
-                </motion.div>
-              </div>
+              {/* Subtitle */}
+              <motion.div
+                className="flex justify-center md:justify-start items-center gap-3 text-sm text-muted-foreground" // SỬA MÀU: Dùng muted-foreground (nâu trung bình)
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+              >
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary" />
+                <span className="tracking-wider">
+                  Giữ hồn văn hóa, kể chuyện Jrai bằng ánh sáng số
+                </span>
+              </motion.div>
 
+              {/* Description */}
               <motion.p
-                className="text-base md:text-xl font-light text-gray-200/90 max-w-3xl leading-relaxed backdrop-blur-sm bg-black/20 p-6 rounded-lg border border-white/10"
+                // SỬA MÀU: Nền mờ từ background, text từ foreground/muted-foreground
+                className="text-base md:text-xl font-light text-foreground/80 max-w-3xl leading-relaxed backdrop-blur-sm bg-card/50 p-6 rounded-xl border border-border mx-auto md:mx-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -123,8 +128,9 @@ export default function Home() {
                 nuôi dưỡng tâm hồn bao thế hệ.
               </motion.p>
 
+              {/* Buttons */}
               <motion.div
-                className="flex flex-wrap gap-4 pt-8"
+                className="flex flex-wrap justify-center md:justify-start gap-4 pt-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
@@ -132,7 +138,8 @@ export default function Home() {
                 <Link href="/di-san">
                   <Button
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-semibold tracking-wide shadow-lg shadow-primary/20 group"
+                    // KHÔNG ĐỔI: Giữ nguyên Primary button
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-semibold tracking-wide shadow-lg shadow-primary/30 group"
                   >
                     Khám phá di sản
                     <motion.span
@@ -148,7 +155,8 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-white/30 bg-white/5 hover:bg-white/10 text-white backdrop-blur-sm px-8 py-6 text-base font-semibold tracking-wide"
+                    // SỬA MÀU: Border và text dùng màu nâu đậm hơn, nền card mờ
+                    className="border-border bg-card/50 hover:bg-card/70 text-foreground backdrop-blur-sm px-8 py-6 text-base font-semibold tracking-wide"
                   >
                     Tìm hiểu thêm
                   </Button>
@@ -157,7 +165,7 @@ export default function Home() {
 
               {/* Stats */}
               <motion.div
-                className="grid grid-cols-3 gap-6 pt-12 max-w-2xl"
+                className="grid grid-cols-3 gap-6 pt-12 max-w-2xl mx-auto md:mx-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
@@ -169,16 +177,15 @@ export default function Home() {
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
-                    className="text-center p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
-                    whileHover={{
-                      scale: 1.05,
-                      borderColor: "rgba(255,255,255,0.3)",
-                    }}
+                    // SỬA MÀU: Nền Card mờ và viền border
+                    className="text-center p-4 rounded-lg bg-card/70 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300"
+                    whileHover={{ scale: 1.05 }}
                   >
                     <div className="text-3xl font-bold text-primary">
                       {stat.number}
                     </div>
-                    <div className="text-sm text-gray-300 mt-1">
+                    {/* SỬA MÀU: Dùng muted-foreground (nâu trung bình) */}
+                    <div className="text-sm text-muted-foreground mt-1">
                       {stat.label}
                     </div>
                   </motion.div>
@@ -188,13 +195,13 @@ export default function Home() {
           </motion.div>
 
           {/* Scroll indicator */}
-          <motion.div
+          {/* <motion.div
             className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
             animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY }}
+            transition={{ duration: 2.5, repeat: Infinity }}
           >
-            <div className="flex flex-col items-center gap-3 bg-white/5 backdrop-blur-sm px-4 py-3 rounded-full border border-white/10">
-              <span className="text-xs font-light tracking-widest text-gray-200">
+            <div className="flex flex-col items-center gap-3 bg-card/70 backdrop-blur-sm px-4 py-3 rounded-full border border-border">
+              <span className="text-xs font-light tracking-widest text-foreground/80">
                 KHÁM PHÁ
               </span>
               <svg
@@ -211,9 +218,8 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </motion.div>
+          </motion.div> */}
         </section>
-
         {/* ========== EXHIBIT SECTIONS ========== */}
         <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
           <ScrollReveal>

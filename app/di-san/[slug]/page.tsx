@@ -9,6 +9,7 @@ import {
   staggerContainerVariants,
   staggerItemVariants,
 } from "@/lib/animations";
+import Link from "next/link";
 
 const exhibitDetails: Record<
   string,
@@ -21,6 +22,7 @@ const exhibitDetails: Record<
       title: string;
       content: string;
       image: string;
+      slug: string;
     }>;
     gallery: Array<{
       image: string;
@@ -56,6 +58,7 @@ Cỏ cây là quà thiên nhiên)
         <br/>
          Thể hiện sự trân trọng công lao của đấng sinh thành và ý thức gìn giữ truyền thống lao động.`,
         image: "/images/cadao/ca-dao-family.jpeg",
+        slug: "ca-dao-gia-dinh",
       },
       {
         title: "Ca dao về kinh nghiệm sống",
@@ -83,27 +86,31 @@ Khô cổ bàn mới xong việc
         </div>
         <br/> Thể hiện triết lý lao động cần cù và tinh thần tôn trọng thành quả làm ra. Ca dao Jrai truyền dạy đạo lý tiết kiệm, siêng năng và biết ơn thiên nhiên.`,
         image: "/images/cadao/ca-dao-life.jpg",
+        slug: "ca-dao-kinh-nghiem-song",
       },
       {
         title: "Ca dao dân gian & lễ hội",
         content:
           "Các bài ca dân gian mô tả sinh hoạt và lễ hội cồng chiêng, phản ánh nhịp sống buôn làng và niềm vui lao động. Ví dụ: 'Gơ sang chiêng pơ hlâm, pơ sang hlâm pơ ting' – cồng vang xa, chiêng gọi gần – miêu tả không khí rộn ràng của ngày hội Jrai.",
         image: "/images/cadao/ca-dao-festival.jpg",
+        slug: "ca-dao-dan-gian",
       },
       {
         title: "Ca dao về thiên nhiên",
         content:
           "Người Jrai xem thiên nhiên là bạn đồng hành. Những câu ca như 'Ai yang ai tơng ia, ai tơng ia ai yang' (Nước nuôi cây, cây giữ nước) thể hiện mối quan hệ hài hòa giữa con người và môi trường – một triết lý sống xanh, bền vững từ bao đời.",
         image: "/images/cadao/ca-dao-nature.jpg",
+        slug: "ca-dao-thien-nhien",
       },
       {
         title: "Ca dao về tình yêu đôi lứa",
         content:
           "Ca dao tình yêu của người Jrai thường mộc mạc nhưng sâu lắng, ca ngợi sự thủy chung và son sắt. Những lời ca kể về tình yêu xa cách, nỗi nhớ và niềm tin gặp lại, phản ánh vẻ đẹp trong sáng, chân thành của tâm hồn Jrai.",
         image: "/images/cadao/ca-dao-love.jpg",
+        slug: "ca-dao-tinh-yeu-doi-lua",
       },
     ],
-    summary:`Người Jrai có những bài ca dao mang đậm nét đặc trưng văn hóa của mình và thường thể hiện tình yêu thương đất nước thiên nhiên và những bài học trong cuộc sống mà ông cha ta truyền lại.
+    summary: `Người Jrai có những bài ca dao mang đậm nét đặc trưng văn hóa của mình và thường thể hiện tình yêu thương đất nước thiên nhiên và những bài học trong cuộc sống mà ông cha ta truyền lại.
 <br/>
     Bài ca dao không chỉ mang lại giá trị văn học mà còn góp phần bảo tồn bản sắc văn hóa độc đáo của người Jrai trên mảnh đất Gia Lai.`,
     gallery: [
@@ -134,6 +141,7 @@ Khô cổ bàn mới xong việc
       </div>
       `,
         image: "/images/tucngu/family-jrai.jpg",
+        slug: "tuc-ngu-ve-gia-dinh",
       },
       {
         title: "Tục ngữ về kinh nghiệm sống",
@@ -157,6 +165,7 @@ Khô cổ bàn mới xong việc
       </div>
       `,
         image: "/images/tucngu/life-jrai.jpg",
+        slug: "tuc-ngu-ve-kinh-nghiem-song",
       },
       {
         title: "Tục ngữ dân gian",
@@ -173,6 +182,7 @@ Khô cổ bàn mới xong việc
       </div>
       `,
         image: "/images/tucngu/folk-jrai.jpg",
+        slug: "tuc-ngu-dan-gian",
       },
     ],
     gallery: [
@@ -206,6 +216,7 @@ Bài tục ngữ không chỉ mang lại giá trị văn học mà còn góp ph�
       - Tản văn
       `,
         image: "/images/truyen/jrai-forest.jpg",
+        slug: "",
       },
       {
         title: "Truyện cổ tích",
@@ -223,6 +234,7 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Ngày xưa, dân làng bị con ma đói quấy phá. Già làng yêu cầu mọi người dựng cây nêu trước nhà, treo lá cây và ống tre tạo tiếng động khiến con ma tưởng là thần linh bảo vệ nên bỏ đi. Từ đó phong tục dựng cây nêu vẫn được giữ đến nay.
       </p>
+      <a href="truyen-dan-gian/cay-neu-va-con-ma-doi" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
     </div>
 
     <!-- 2 -->
@@ -232,6 +244,8 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Một chàng trai nghèo được thần ban cho chiếc cồng chiêng kỳ diệu. Âm thanh của nó mang lại mùa màng bội thu, nhưng vì lòng kiêu ngạo, chàng bị thần thu lại. Câu chuyện dạy con người sự khiêm nhường và tôn trọng điều thiêng liêng.
       </p>
+            <a href="truyen-dan-gian/chang-trai-va-cong-chieng-than" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
+
     </div>
 
     <!-- 3 -->
@@ -241,6 +255,8 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Di ông – chàng trai dũng cảm – vượt qua nhiều thử thách để cưới Nữ thần Mặt Trời. Câu chuyện ca ngợi lòng kiên trì, trí thông minh và khát vọng vươn tới ánh sáng — biểu tượng cho niềm tin và tình yêu mãnh liệt.
       </p>
+            <a href="truyen-dan-gian/truyen-dan-gian-di-ong" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
+
     </div>
 
     <!-- 4 -->
@@ -250,6 +266,8 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Khi dân làng bị thần Sét gây hại, chàng trai Đăm Dong dũng cảm chiến đấu để bảo vệ buôn làng. Câu chuyện tôn vinh lòng dũng cảm, tinh thần đoàn kết và niềm tin con người có thể vượt qua thiên nhiên.
       </p>
+            <a href="truyen-dan-gian/truyen-dan-gian-dam-dong" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
+
     </div>
 
     <!-- 5 -->
@@ -259,6 +277,8 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Hai vợ chồng nghèo được thần núi ban cây nêu thần – chỉ cần khấn, cây sẽ ban thức ăn. Nhưng người hàng xóm tham lam ăn trộm cây và bị trừng phạt. Câu chuyện thể hiện đạo lý “ở hiền gặp lành”, phê phán lòng tham.
       </p>
+            <a href="truyen-dan-gian/truyen-dan-gian-cay-neu-than" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
+
     </div>
 
     <!-- 6 -->
@@ -268,10 +288,13 @@ display:grid;
       <p style="font-size: 15px; line-height: 1.6; color:black">
         Trong rừng sâu có voi thần bảo vệ dân làng khỏi thú dữ. Khi voi biến mất, dân dựng tượng voi để tưởng nhớ. Câu chuyện thể hiện lòng tôn kính thiên nhiên và niềm tin vào linh hồn bảo hộ của buôn làng.
       </p>
+            <a href="truyen-dan-gian/truyen-dan-gian-voi-than" style="font-weight:600; margin-top:12px; display:inline-block">Xem thêm</a>
+
     </div>
   </div>
       `,
         image: "/images/truyen/jrai-tale.jpg",
+        slug: "",
       },
       {
         title: "Truyện truyền thuyết",
@@ -280,9 +303,13 @@ display:grid;
         <b>Truyền thuyết “Hoa dã quỳ”</b><br/>
         Chuyện kể về nàng H’Linh và chàng K’Lang yêu nhau say đắm. Vì ghen tuông, con trai tộc trưởng đã bắn chết họ. Nơi hai người ngã xuống mọc lên loài hoa vàng rực rỡ – hoa dã quỳ. Câu chuyện ca ngợi tình yêu chung thủy, vượt qua ranh giới sinh tử.<br/><br/>
         <i>Ý nghĩa:</i> Biểu tượng của tình yêu vĩnh cửu và lòng trung thành trong văn hóa Jrai.
+
+            <a href="truyen-dan-gian/truyen-thuyet-hoa-da-quy" style="font-weight:600; margin-top:12px; display:block">Xem thêm</a>
+
       </div>
       `,
         image: "/images/truyen/danquy.jpeg",
+        slug: "",
       },
       {
         title: "Sự tích núi Chư Đăng Ya",
@@ -290,9 +317,13 @@ display:grid;
       <div>
         Núi Chư Đăng Ya (huyện Mang Yang, Gia Lai) được kể là nơi diễn ra cuộc chiến giữa anh hùng K’Đu và con rồng độc ác gây hạn hán, lũ lụt. Sau nhiều ngày chiến đấu dữ dội, K’Đu chiến thắng, chôn vùi con rồng dưới đất. Từ đó, ngọn núi hình thành – đỉnh núi giống đầu rồng, còn dung nham hóa thành suối nước nóng.<br/><br/>
         <i>Ý nghĩa:</i> Tôn vinh tinh thần dũng cảm, lòng nhân nghĩa và niềm tin con người có thể điều hòa thiên nhiên.<br/>
+
+            <a href="truyen-dan-gian/su-tich-nui-chu-dang-ya" style="font-weight:600; margin-top:12px; display:block">Xem thêm</a>
+        
       </div>
       `,
         image: "/images/truyen/chudangya.jpg",
+        slug: "",
       },
     ],
     gallery: [
@@ -345,7 +376,7 @@ export default function ExhibitDetailPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-7xl md:text-8xl font-bold mb-6 border-b-4 border-gold pb-4 inline-block">
+            <h1 className="text-7xl md:text-8xl font-bold mb-6 border-b-4 border-gold pb-4 inline-block text-white">
               {exhibit.title}
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mt-8">
@@ -393,13 +424,14 @@ export default function ExhibitDetailPage() {
                               __html: section.content,
                             }}
                           />
-                          {/* <motion.a
-                            href="#"
-                            className="inline-flex items-center gap-3 text-gold font-semibold hover:gap-5 transition-all"
-                            whileHover={{ x: 5 }}
-                          >
-                            Explore More →
-                          </motion.a> */}
+                          {section.slug && (
+                            <Link
+                              href={`${slug}/${section.slug}`}
+                              className="inline-flex items-center gap-3 text-gold font-semibold hover:gap-5 transition-all"
+                            >
+                              Tìm hiểu thêm →
+                            </Link>
+                          )}
                         </motion.div>
 
                         <motion.div
@@ -463,13 +495,14 @@ export default function ExhibitDetailPage() {
                               __html: section.content,
                             }}
                           />
-                          {/* <motion.a
-                            href="#"
-                            className="inline-flex items-center gap-3 text-gold font-semibold hover:gap-5 transition-all"
-                            whileHover={{ x: 5 }}
-                          >
-                            Explore More →
-                          </motion.a> */}
+                          {section.slug && (
+                            <Link
+                              href={`${slug}/${section.slug}`}
+                              className="inline-flex items-center gap-3 text-gold font-semibold hover:gap-5 transition-all"
+                            >
+                              Tìm hiểu thêm →
+                            </Link>
+                          )}
                         </motion.div>
                       </>
                     )}
