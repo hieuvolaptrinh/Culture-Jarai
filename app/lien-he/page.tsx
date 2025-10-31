@@ -50,7 +50,7 @@ export default function ContactPage() {
     <PageTransition>
       <main className="min-h-screen bg-background text-foreground">
         {/* --- HERO --- */}
-        <section className="relative h-96 flex items-center px-8 md:px-16 overflow-hidden border-b border-white/10">
+        <section className="relative h-96 flex items-center px-8 md:px-16 overflow-hidden border-b border-white/10 max-w-7xl mx-auto">
           <motion.div
             className="max-w-4xl"
             initial={{ opacity: 0, y: 40 }}
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-12 py-4 bg-gold text-black font-bold text-lg rounded-lg hover:bg-gold/90 disabled:opacity-50 transition-colors"
+                className="px-12 py-4 bg-secondary text-white font-bold text-lg rounded-lg hover:bg-destructive/90 disabled:opacity-50 transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

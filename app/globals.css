@@ -232,6 +232,6 @@
   #storyGrid {
     display: grid !important;
     gap: 40px !important;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
   }
 }

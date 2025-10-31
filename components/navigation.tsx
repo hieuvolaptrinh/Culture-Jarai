@@ -10,7 +10,7 @@ export function Navigation() {
   const navItems = [
     { label: "Thông tin về bảo tàng", href: "/thong-tin" },
     { label: "Các di sản", href: "/di-san" },
-    { label: "Tìm hiểu thêm", href: "/thong-tin" },
+    { label: "Tìm hiểu thêm", href: "/tim-hieu" },
     { label: "Liên lạc", href: "/lien-he" },
   ];
 

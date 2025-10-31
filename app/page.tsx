@@ -299,7 +299,7 @@ export default function Home() {
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
                       {exhibit.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed line-clamp-3">
                       {exhibit.description}
                     </p>
 

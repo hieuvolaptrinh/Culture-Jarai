@@ -1,11 +1,13 @@
 "use client"
 
+import { useState, useEffect } from "react" // 1. Import useState and useEffect
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { PageTransition } from "@/components/page-transition"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { staggerContainerVariants, staggerItemVariants } from "@/lib/animations"
 
+// ... (Your exhibits data remains the same)
 const exhibits = [
   {
     id: 1,
@@ -36,7 +38,57 @@ const exhibits = [
   }
 ]
 
+
 export default function ExhibitsPage() {
+  // 2. Initialize a loading state
+  const [isLoading, setIsLoading] = useState(true)
+
+  // 3. Simulate a data fetch/loading delay
+  useEffect(() => {
+    // In a real application, this is where you'd fetch data.
+    // For this example, we use a setTimeout to simulate a 1-second load time.
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // 4. Render a loading indicator if isLoading is true
+  if (isLoading) {
+    return (
+      <PageTransition>
+        <main className="min-h-screen flex items-center justify-center bg-background text-foreground">
+          {/* A simple, centered loading spinner/indicator */}
+          <div className="flex flex-col items-center space-y-4">
+            <svg
+              className="animate-spin h-10 w-10 text-primary"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
+            <p className="text-lg text-muted-foreground">Đang tải triển lãm...</p>
+          </div>
+        </main>
+      </PageTransition>
+    )
+  }
+
+  // 5. Render the content once loading is complete
   return (
     <PageTransition>
       <main className="min-h-screen bg-background text-foreground">
