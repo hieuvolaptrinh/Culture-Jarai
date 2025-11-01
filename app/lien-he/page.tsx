@@ -4,7 +4,11 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { PageTransition } from "@/components/page-transition"
-import { SectionHeader } from "@/components/section-header"
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 import { staggerContainerVariants, staggerItemVariants } from "@/lib/animations"
 
 export default function ContactPage() {
@@ -40,189 +44,182 @@ export default function ContactPage() {
   }
 
   const contactInfo = [
-    { title: "Người liên hệ", value: "Đinh Đức Anh – 0394 834 694" },
-    { title: "Người liên hệ", value: "Rơ Lan H’Rê Ny – 0362 745 894" },
-    { title: "Email", value: "baotangjrai@museum.vn" },
-    { title: "Địa điểm", value: "Pleiku, Gia Lai – Việt Nam" },
+    { icon: "📞", title: "Đinh Đức Anh", value: "0394 834 694", gradient: "from-primary/20 to-primary/5" },
+    { icon: "📞", title: "Rơ Lan H'Rê Ny", value: "0362 745 894", gradient: "from-primary/20 to-primary/5" },
+    { icon: "✉️", title: "Email", value: "baotangjrai@museum.vn", gradient: "from-secondary/20 to-secondary/5" },
+    { icon: "📍", title: "Địa điểm", value: "Pleiku, Gia Lai – Việt Nam", gradient: "from-accent/20 to-accent/5" },
+  ]
+
+  const faqs = [
+    {
+      q: "Bảo tàng có mở cửa cho công chúng tham quan trực tiếp không?",
+      a: "Hiện tại, Bảo tàng Văn học Jrai hoạt động chủ yếu dưới hình thức trực tuyến. Mọi người có thể truy cập website để tìm hiểu, khám phá và đóng góp tư liệu.",
+    },
+    {
+      q: "Tôi có thể gửi truyện, thơ hoặc tư liệu dân gian Jrai cho bảo tàng không?",
+      a: "Rất hoan nghênh! Bạn có thể gửi qua biểu mẫu liên hệ hoặc email chính thức của bảo tàng. Mọi đóng góp đều được trân trọng và ghi nhận.",
+    },
+    {
+      q: "Dự án có hợp tác với trường học hay tổ chức văn hóa không?",
+      a: "Chúng tôi sẵn sàng hợp tác với các trường, viện nghiên cứu và tổ chức văn hóa trong công tác sưu tầm, giảng dạy và quảng bá văn học dân gian Jrai.",
+    },
+    {
+      q: "Có thể sử dụng tư liệu của bảo tàng cho mục đích học tập không?",
+      a: "Hoàn toàn được phép, miễn là ghi rõ nguồn 'Bảo tàng Văn học Jrai'. Với mục đích thương mại, vui lòng liên hệ trước để được hướng dẫn cụ thể.",
+    },
   ]
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground">
-        {/* --- HERO --- */}
-        <section className="relative h-96 flex items-center px-8 md:px-16 overflow-hidden border-b border-white/10 max-w-7xl mx-auto">
+      <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
           <motion.div
-            className="max-w-4xl"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-6xl md:text-7xl font-bold border-b-4 border-gold pb-6 inline-block">
-              Liên hệ
-            </h1>
-            <p className="text-lg text-foreground mt-8 max-w-2xl leading-relaxed">
-              Nếu bạn có thắc mắc, mong muốn hợp tác hoặc đóng góp tư liệu cho dự án
-              “Bảo tàng Văn học Jrai”, chúng tôi luôn sẵn lòng lắng nghe và đón nhận.
-            </p>
-          </motion.div>
+            className="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 8, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute top-1/2 -left-40 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"
+            animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.4, 0.2] }}
+            transition={{ duration: 10, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute bottom-20 right-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
+            transition={{ duration: 12, repeat: Infinity }}
+          />
+        </div>
+
+        {/* HERO */}
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-linear-to-br from-primary/10 via-background to-secondary/10" />
+          <div className="absolute inset-0 opacity-5" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }} />
+
+          <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
+              <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 backdrop-blur-sm px-4 py-2 text-sm">
+                LIÊN HỆ VỚI CHÚNG TÔI
+              </Badge>
+
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold">
+                <span className="bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                  Kết Nối
+                </span>
+                <br />
+                <span className="text-foreground">Cùng Bảo Tàng</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Nếu bạn có thắc mắc, mong muốn hợp tác hoặc đóng góp tư liệu cho dự án
+                "Bảo tàng Văn học Jrai", chúng tôi luôn sẵn lòng lắng nghe và đón nhận.
+              </p>
+            </motion.div>
+          </div>
         </section>
 
-        {/* --- CONTACT INFO --- */}
-        <section className="px-8 md:px-16 py-32 max-w-7xl mx-auto border-b border-white/10">
+        {/* CONTACT INFO */}
+        <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             initial="hidden"
             whileInView="visible"
             variants={staggerContainerVariants}
             viewport={{ once: true, margin: "-100px" }}
           >
             {contactInfo.map((info, index) => (
-              <motion.div key={index} className="border-l-2 border-gold pl-8 py-4" variants={staggerItemVariants}>
-                <p className="text-gold font-bold text-sm mb-3">{String(index + 1).padStart(2, "0")}</p>
-                <h3 className="text-lg font-bold mb-2">{info.title}</h3>
-                <p className="text-foreground">{info.value}</p>
+              <motion.div key={index} variants={staggerItemVariants}>
+                <Card className={`group h-full border-border/50 hover:border-primary/50 transition-all duration-300 bg-linear-to-br ${info.gradient} backdrop-blur-sm`}>
+                  <CardContent className="p-6 text-center space-y-4">
+                    <div className="text-5xl group-hover:scale-110 transition-transform">{info.icon}</div>
+                    <h3 className="font-semibold text-lg text-foreground">{info.title}</h3>
+                    <p className="text-muted-foreground">{info.value}</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
         </section>
 
-        {/* --- CONTACT FORM --- */}
-        <section className="px-8 md:px-16 py-32 max-w-4xl mx-auto border-b border-white/10">
-          <SectionHeader number="01" title="Gửi thông điệp" />
+        {/* CONTACT FORM */}
+        <section className="py-20 px-4 md:px-8 max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4 border-primary/50 text-primary">GỬI THÔNG ĐIỆP</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Để lại lời nhắn cho chúng tôi</h2>
+            <p className="text-muted-foreground">Điền vào form bên dưới và chúng tôi sẽ phản hồi sớm nhất có thể</p>
+          </div>
 
-          <motion.form
-            onSubmit={handleSubmit}
-            className="space-y-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="grid md:grid-cols-2 gap-8">
-              <motion.div variants={staggerItemVariants}>
-                <label className="block text-sm font-bold text-gold mb-4">Họ và tên</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="Nhập họ và tên của bạn"
-                />
-              </motion.div>
-
-              <motion.div variants={staggerItemVariants}>
-                <label className="block text-sm font-bold text-gold mb-4">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
-                  placeholder="example@email.com"
-                />
-              </motion.div>
-            </div>
-
-            <motion.div variants={staggerItemVariants}>
-              <label className="block text-sm font-bold text-gold mb-4">Chủ đề</label>
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full px-0 py-3 bg-transparent border-b border-white/30 focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40"
-                placeholder="Nội dung bạn muốn trao đổi"
-              />
-            </motion.div>
-
-            <motion.div variants={staggerItemVariants}>
-              <label className="block text-sm font-bold text-gold mb-4">Nội dung</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={6}
-                className="w-full px-0 py-3 bg-transparent border-b border-foreground focus:border-gold outline-none transition-colors text-foreground placeholder:text-foreground/40 resize-none"
-                placeholder="Viết thông điệp của bạn..."
-              />
-            </motion.div>
-
-            <motion.div variants={staggerItemVariants} className="pt-8">
-              <motion.button
-                type="submit"
-                disabled={isSubmitting}
-                className="px-12 py-4 bg-secondary text-white font-bold text-lg rounded-lg hover:bg-destructive/90 disabled:opacity-50 transition-colors"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                {isSubmitting ? "Đang gửi..." : "Gửi thông điệp"}
-              </motion.button>
-            </motion.div>
-
-            {/* Thông báo trạng thái */}
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{
-                opacity: submitStatus !== "idle" ? 1 : 0,
-                y: submitStatus !== "idle" ? 0 : -10,
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              {submitStatus === "success" && (
-                <div className="p-6 rounded-lg border border-gold/50 bg-gold/5 text-gold">
-                  Cảm ơn bạn đã gửi thông tin! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.
+          <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+            <CardContent className="p-8">
+              <motion.form onSubmit={handleSubmit} className="space-y-6" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Họ và tên</label>
+                    <Input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Nguyễn Văn A" className="bg-background/50 border-border/50 focus:border-primary" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Email</label>
+                    <Input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder="email@example.com" className="bg-background/50 border-border/50 focus:border-primary" />
+                  </div>
                 </div>
-              )}
-              {submitStatus === "error" && (
-                <div className="p-6 rounded-lg border border-red-500/50 bg-red-500/5 text-red-500">
-                  Có lỗi xảy ra, vui lòng thử lại sau.
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-foreground">Tiêu đề</label>
+                  <Input type="text" name="subject" value={formData.subject} onChange={handleChange} required placeholder="Nội dung bạn muốn trao đổi" className="bg-background/50 border-border/50 focus:border-primary" />
                 </div>
-              )}
-            </motion.div>
-          </motion.form>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-foreground">Nội dung</label>
+                  <Textarea name="message" value={formData.message} onChange={handleChange} required rows={6} placeholder="Viết thông điệp của bạn..." className="bg-background/50 border-border/50 focus:border-primary resize-none" />
+                </div>
+
+                <Button type="submit" size="lg" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  {isSubmitting ? "Đang gửi..." : "Gửi thông điệp"}
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                </Button>
+
+                {submitStatus === "success" && (
+                  <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 text-green-600 bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                    <span>Gửi thành công! Chúng tôi sẽ liên hệ lại sớm.</span>
+                  </motion.div>
+                )}
+
+                {submitStatus === "error" && (
+                  <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-2 text-red-600 bg-red-50 dark:bg-red-950/20 p-4 rounded-lg">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                    <span>Có lỗi xảy ra. Vui lòng thử lại.</span>
+                  </motion.div>
+                )}
+              </motion.form>
+            </CardContent>
+          </Card>
         </section>
 
-        {/* --- FAQ --- */}
-        <section className="px-8 md:px-16 py-32 max-w-4xl mx-auto">
-          <SectionHeader number="02" title="Câu hỏi thường gặp" subtitle="Giải đáp một số thắc mắc phổ biến" />
+        {/* FAQ */}
+        <section className="py-20 px-4 md:px-8 max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4 border-secondary/50 text-secondary">CÂU HỎI THƯỜNG GẶP</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Giải đáp thắc mắc</h2>
+            <p className="text-muted-foreground">Một số câu hỏi phổ biến từ cộng đồng</p>
+          </div>
 
-          <motion.div
-            className="space-y-8"
-            initial="hidden"
-            whileInView="visible"
-            variants={staggerContainerVariants}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {[
-              {
-                q: "Bảo tàng có mở cửa cho công chúng tham quan trực tiếp không?",
-                a: "Hiện tại, Bảo tàng Văn học Jrai hoạt động chủ yếu dưới hình thức trực tuyến. Mọi người có thể truy cập website để tìm hiểu, khám phá và đóng góp tư liệu.",
-              },
-              {
-                q: "Tôi có thể gửi truyện, thơ hoặc tư liệu dân gian Jrai cho bảo tàng không?",
-                a: "Rất hoan nghênh! Bạn có thể gửi qua biểu mẫu liên hệ hoặc email chính thức của bảo tàng. Mọi đóng góp đều được trân trọng và ghi nhận.",
-              },
-              {
-                q: "Dự án có hợp tác với trường học hay tổ chức văn hóa không?",
-                a: "Chúng tôi sẵn sàng hợp tác với các trường, viện nghiên cứu và tổ chức văn hóa trong công tác sưu tầm, giảng dạy và quảng bá văn học dân gian Jrai.",
-              },
-              {
-                q: "Có thể sử dụng tư liệu của bảo tàng cho mục đích học tập không?",
-                a: "Hoàn toàn được phép, miễn là ghi rõ nguồn “Bảo tàng Văn học Jrai”. Với mục đích thương mại, vui lòng liên hệ trước để được hướng dẫn cụ thể.",
-              },
-            ].map((faq, index) => (
-              <motion.div
-                key={index}
-                className="border-b border-white/10 pb-8 last:border-b-0"
-                variants={staggerItemVariants}
-              >
-                <h3 className="text-xl font-bold mb-4 text-gold">{faq.q}</h3>
-                <p className="text-foreground/70 leading-relaxed">{faq.a}</p>
+          <motion.div className="space-y-6" initial="hidden" whileInView="visible" variants={staggerContainerVariants} viewport={{ once: true, margin: "-100px" }}>
+            {faqs.map((faq, index) => (
+              <motion.div key={index} variants={staggerItemVariants}>
+                <Card className="group border-border/50 hover:border-primary/50 transition-all bg-card/50 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <h3 className="text-lg font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">{faq.q}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </motion.div>
