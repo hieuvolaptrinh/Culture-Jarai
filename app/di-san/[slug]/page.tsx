@@ -361,31 +361,140 @@ export default function ExhibitDetailPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground">
-        <section className="relative h-screen flex items-end overflow-hidden">
-          <img
-            src={exhibit.heroImage || "/placeholder.svg"}
-            alt={exhibit.title}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+      <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+        {/* Background decoration */}
+        <motion.div
+          className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10"
+          animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 8, repeat: Infinity }}
+        />
 
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+          {/* Background image with overlay */}
+          <div className="absolute inset-0">
+            <img
+              src={exhibit.heroImage || "/placeholder.svg"}
+              alt={exhibit.title}
+              className="w-full h-full object-cover"
+            />
+            {/* Multiple layered overlays for better text contrast */}
+            <div className="absolute inset-0 bg-linear-to-br from-black/70 via-black/60 to-black/70" />
+            <div className="absolute inset-0 bg-linear-to-t from-background via-background/50 to-transparent" />
+
+            {/* SVG pattern overlay for texture */}
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              }}
+            />
+          </div>
+
+          {/* Floating decorative elements */}
           <motion.div
-            className="relative z-10 px-8 md:px-16 pb-20 max-w-4xl w-full"
+            className="absolute top-20 left-10 w-64 h-64 border-2 border-primary/30 rounded-full opacity-20"
+            animate={{ rotate: [0, 360] }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          />
+          <motion.div
+            className="absolute bottom-20 right-10 w-48 h-48 border-2 border-secondary/30 rounded-full opacity-20"
+            animate={{ rotate: [360, 0] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+          />
+
+          {/* Main content */}
+          <motion.div
+            className="relative z-10 px-8 md:px-16 max-w-5xl w-full text-center"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-7xl md:text-8xl font-bold mb-6 border-b-4 border-gold pb-4 inline-block text-white">
-              {exhibit.title}
-            </h1>
-            <p className="text-xl text-white/80 max-w-2xl mt-8">
+            {/* Badge */}
+            <motion.div
+              className="inline-block mb-8"
+              whileHover={{ scale: 1.05 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <span className="px-4 py-2 rounded-full bg-primary/20 border border-primary/50 text-primary text-sm font-medium backdrop-blur-sm">
+                📖 DI SẢN VĂN HỌC JRAI
+              </span>
+            </motion.div>
+
+            {/* Main title */}
+            <motion.h1
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <motion.span
+                className="bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent inline-block"
+                animate={{
+                  backgroundPosition: ["0% center", "100% center", "0% center"],
+                }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                {exhibit.title}
+              </motion.span>
+            </motion.h1>
+
+            {/* Decorative line */}
+            <motion.div
+              className="h-1 w-32 bg-linear-to-r from-primary to-secondary rounded-full mx-auto mb-8"
+              initial={{ width: 0 }}
+              animate={{ width: 128 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            />
+
+            {/* Description */}
+            <motion.p
+              className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed backdrop-blur-sm bg-background/20 p-6 rounded-xl border border-primary/20"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
               {exhibit.fullDescription}
-            </p>
+            </motion.p>
+
+            {/* CTA Button */}
+            <motion.div
+              className="mt-12 flex gap-4 justify-center flex-wrap"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a
+                  href="#content"
+                  className="px-8 py-3 rounded-lg bg-linear-to-r from-primary to-secondary text-white font-medium inline-block hover:shadow-lg hover:shadow-primary/50 transition-all"
+                >
+                  Khám phá thêm
+                </a>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  href="/di-san"
+                  className="px-8 py-3 rounded-lg border-2 border-primary/50 text-primary font-medium hover:bg-primary/10 transition-all"
+                >
+                  Quay lại
+                </Link>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </section>
 
-        <section className="px-8 md:px-16 py-32 max-w-[1440px] mx-auto">
+        <section
+          id="content"
+          className="px-8 md:px-16 py-32 max-w-[1440px] mx-auto"
+        >
           <motion.div
             className="space-y-32"
             initial="hidden"

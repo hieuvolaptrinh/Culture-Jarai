@@ -84,29 +84,74 @@ export default function AboutPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground">
+      <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+        {/* Background decorations */}
+        <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+          <motion.div
+            className="absolute -top-40 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 8, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute top-1/3 -left-32 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"
+            animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.4, 0.2] }}
+            transition={{ duration: 10, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute bottom-0 right-1/3 w-72 h-72 bg-accent/5 rounded-full blur-3xl"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.3, 0.2] }}
+            transition={{ duration: 12, repeat: Infinity }}
+          />
+        </div>
+
         {/* HERO SECTION */}
-        <section className="relative h-screen flex items-center px-8 md:px-16 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent z-0" />
+        <section className="relative min-h-[70vh] flex items-center justify-center px-8 md:px-16 overflow-hidden pt-24">
+          <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-secondary/5" />
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/dangianjraibahnar.jpg')" }}
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}
           />
 
-          <motion.div
-            className="relative z-10 max-w-4xl"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 border-b-4 border-foreground pb-6 inline-block">
-              Bảo Tàng Văn Học Jrai
-            </h1>
-            <p className="text-2xl text-foreground leading-relaxed max-w-2xl mt-8">
-              Giữ hồn văn hóa, kể chuyện Jrai bằng ánh sáng số — nơi câu chuyện
-              cổ vang vọng trong từng nhịp công nghệ hiện đại.
-            </p>
-          </motion.div>
+          <div className="relative z-10 max-w-5xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              <motion.div className="inline-block" whileHover={{ scale: 1.05 }}>
+                <span className="px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium">
+                  🏛️ BẢO TÀNG VĂN HỌC JRAI
+                </span>
+              </motion.div>
+
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+                <motion.span
+                  className="bg-linear-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"
+                  animate={{
+                    backgroundPosition: [
+                      "0% center",
+                      "100% center",
+                      "0% center",
+                    ],
+                  }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                >
+                  Gìn Giữ Di Sản
+                </motion.span>
+                <br />
+                <span className="text-foreground">Văn Hóa Jrai</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Nơi lưu trữ, bảo tồn và lan tỏa kho tàng trí tuệ từng thế hệ của
+                đồng bào Jrai – nơi câu chuyện cổ xưa vang vọng trong nhịp sống
+                hiện đại
+              </p>
+            </motion.div>
+          </div>
         </section>
 
         {/* INTRODUCTION */}
@@ -151,7 +196,7 @@ export default function AboutPage() {
                 alt="Jrai Museum"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
             </motion.div>
           </div>
         </section>
