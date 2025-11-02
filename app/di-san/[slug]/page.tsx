@@ -213,7 +213,6 @@ Bài tục ngữ không chỉ mang lại giá trị văn học mà còn góp ph�
       - Truyện cổ tích<br/>
       - Truyện truyền thuyết<br/>
       - Sự tích<br/>
-      - Tản văn
       `,
         image: "/images/truyen/jrai-forest.jpg",
         slug: "",

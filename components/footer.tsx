@@ -105,7 +105,7 @@ export function Footer() {
 
         <motion.div className="flex flex-col md:flex-row justify-between items-center gap-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.3 }} viewport={{ once: true }}>
           <div className="text-center md:text-left">
-            <p className="text-muted-foreground text-sm mb-2"> {currentYear} Bảo tàng Văn học Jrai</p>
+            <p className="text-muted-foreground text-sm mb-2"> {currentYear} Bảo Tàng Văn Học Dân Gian Jrai</p>
             <p className="text-xs text-muted-foreground/60">Bảo tồn và tôn vinh di sản văn hóa Jrai</p>
           </div>
 

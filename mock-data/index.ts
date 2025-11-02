@@ -45,7 +45,7 @@ export const mockData = [
         <p style="margin-bottom: 20px;">
           <strong>Dịch nghĩa (Chi tiết):</strong>
           <span style="display: block; margin-left: 15px;">
-            'Cây lúa của mẹ, cây lúa của cha, ruộng đồng là ruộng quý, cỏ cây là quà thiên nhiên.'
+            'Cây lúa của mẹ, cây lúa của cha, ruộng đồng là ruộng quý, cỏ cây là quà thiên nhiên.' <br/>
           </span>
         </p>
       
@@ -57,7 +57,7 @@ export const mockData = [
             margin-bottom: 10px;
           "
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -127,7 +127,7 @@ export const mockData = [
             margin-bottom: 10px;
           "
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -208,10 +208,12 @@ Chỉ một con cá bống<br>
 Em không buồn bắt lấy<br>
 Em muốn bắt con cá có vây<br>
 Em thích cầm con cá duôi dài<br>
-Ơi Brông ơi, ơi, ơi Brěnh ơi
+Ơi Brông ơi, ơi, ơi Brěnh ơi <br/>
+
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài ca dao dài (Dăm Brông) vừa thể hiện tình cảm vợ chồng <strong style=\"color: oklch(0.60 0.15 80);\">trong sáng, trọn vẹn</strong>, vừa lồng ghép sự phê phán những giá trị phi thực tế (như cá có vây, đuôi dài), đề cao sự <strong style=\"color: oklch(0.60 0.15 80);\">cần cù lao động và chung thủy</strong>.
                 </p>
@@ -257,11 +259,12 @@ Mà trời đã chiều rồi<br>
 Dân làng ta về hết<br>
 Tối nay tà ăn chung<br>
 Vài con cá nhỏ này<br>
-Ngày mai chẳng còn gì"...
+Ngày mai chẳng còn gì"... <br/>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)
 
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài ca dao mô tả rõ <strong style=\"color: oklch(0.60 0.15 80);\">sinh hoạt tôn giáo và lao động</strong> của buôn làng (cúng Yang nước, cúng Yang nhà rông), thể hiện tinh thần <strong style=\"color: oklch(0.60 0.15 80);\">đoàn kết, chia sẻ</strong> thành quả lao động dù ít ỏi              
                 </p>
@@ -307,10 +310,11 @@ Hứa suông, người ta chỉ hứa suông<br>
 Con khóc không diều thả<br>
 Con buồn chẳng dụ chơi<br>
 Con đòi mẹ kêu cha<br>
-Về anh, về nhanh, con chúng ta đang chờ...
+Về anh, về nhanh, con chúng ta đang chờ...<br/>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)
 </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Thể hiện lời van xin và cảnh báo người chồng/người yêu <strong style=\"color: oklch(0.60 0.15 80);\">đừng ham danh lợi (quần mới, giàu sang)</strong> bên ngoài, nhấn mạnh trách nhiệm với gia đình và con cái.
                 </p>
@@ -373,10 +377,10 @@ Tôi nhìn theo anh đã không nổi<br>
 Tôi ngó theo anh đã không tới<br>
 Tôi nghĩ đến anh đã thật xa xôi<br>
 Nào nhanh lên, nhanh lên anh ơi.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006) <br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài hát là lời nhắn gửi <strong style=\"color: oklch(0.60 0.15 80);\">chan chứa yêu thương</strong>, xen lẫn nỗi buồn và khắc khoải. Người phụ nữ bộc lộ tình cảm chân thành dành cho người đàn ông – vừa trách, vừa nhắc nhở, vừa mong anh vẫn giữ lòng hướng về mái nhà, về tình nghĩa đã vun đắp.
                 </p>
@@ -409,10 +413,10 @@ Hia ani yơ dơi ană ta hia ami yơ dơi vit bě.<br>
 Mong đêm ngày em hãy về đi<br>
 Em đâu rồi, đi đâu hỡi em<br>
 Con đang khóc, em hãy về đi.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Thể hiện sự <strong style=\"color: oklch(0.60 0.15 80);\">thương nhớ và mong mỏi</strong> người vợ/người yêu trở về, đặc biệt nhấn mạnh vai trò của người mẹ đối với con cái <strong style=\"color: oklch(0.60 0.15 80);\">('Con đang khóc')</strong>.
                 </p>
@@ -450,10 +454,10 @@ Mùa bẻ bắp con chúng ta chưa biết đi<br>
 Bây giờ con đã lớn<br>
 Biết theo mẹ lên rẫy<br>
 Biết theo cha đi săn.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Mô tả quá trình <strong style=\"color: oklch(0.60 0.15 80);\">trưởng thành của con cái</strong>, gắn liền với chu kỳ mùa vụ và hoạt động sinh kế truyền thống. Khẳng định vai trò giáo dục bằng cách <strong style=\"color: oklch(0.60 0.15 80);\">truyền dạy nghề nghiệp</strong> từ cha mẹ.
                 </p>
@@ -501,10 +505,11 @@ Cây xanh ta trồng<br>
 Tay cha làm lụng<br>
 Của cải ông cha làm ra ta nhớ<br>
 Rãy cũ thành rừng ta vẫn không quên.<br>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
 
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đề cao <strong style=\"color: oklch(0.60 0.15 80);\">công ơn sinh thành, dưỡng dục và gây dựng</strong> của cha mẹ, ông bà. Thể hiện sự tôn trọng truyền thống và <strong style=\"color: oklch(0.60 0.15 80);\">ghi nhớ cội nguồn</strong> (cả rẫy cũ)
                 </p>
@@ -581,10 +586,10 @@ Con thương mẹ bằng ấy<br>
 Suối chảy triền miên<br>
 Chẳng ai đếm nổi<br>
 Công ơn mẹ từng ấy.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Sử dụng hình ảnh <strong style=\"color: oklch(0.60 0.15 80);\">lao động cực nhọc trên rẫy</strong> để tôn vinh tình mẫu tử và công lao to lớn của người mẹ. Công ơn được ví với những hình ảnh thiên nhiên <strong style=\"color: oklch(0.60 0.15 80);\">vĩ đại (sông tràn, suối chảy)</strong>.
                 </p>
@@ -655,7 +660,7 @@ Công ơn mẹ từng ấy.<br>
       margin-bottom: 10px;
     \"
   >
-    Phân tích &amp; Ý nghĩa Văn hóa:
+    Ý nghĩa:
   </h3>
 
   <p>
@@ -724,7 +729,7 @@ Công ơn mẹ từng ấy.<br>
       margin-bottom: 10px;
     \"
   >
-    Phân tích &amp; Ý nghĩa Văn hóa:
+    Ý nghĩa:
   </h3>
 
   <p>
@@ -820,10 +825,10 @@ Như bụi bám cơm<br>
 Như thịt dính răng<br>
 <br>
 Ôi chao, thật nhớ thương.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đây là lời <strong style=\"color: oklch(0.60 0.15 80);\">răn dạy trực diện</strong>, lên án thói nghiện rượu và ích kỷ Nhấn mạnh trách nhiệm với gia đình (củi, nước) và yêu cầu trở thành <strong style=\"color: oklch(0.60 0.15 80);\">'người tốt'</strong>, gắn bó với buôn làng
                 </p>
@@ -875,10 +880,10 @@ Con chúng ta chưa biết gọi bố<br>
 Con chúng ta chưa biết đòi mẹ<br>
 Con chúng ta còn sợ người lạ<br>
 Này đây, hãy nuôi con chúng ta...<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Mô tả sự <strong style=\"color: oklch(0.60 0.15 80);\">thương xót</strong> dành cho đứa trẻ còn quá bé bỏng (chưa biết bú, chưa biết gọi cha mẹ) và là lời <strong style=\"color: oklch(0.60 0.15 80);\">kêu gọi cộng đồng</strong>, người thân chăm sóc đứa trẻ bị bỏ rơi.
                 </p>
@@ -949,10 +954,10 @@ Không cái chén đội đầu<br>
 Không cả mảnh vải trùm<br>
 <br>
 Nếu mà con chết đi...<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đây là lời <strong style=\"color: oklch(0.60 0.15 80);\">than vãn, cảnh báo</strong> về sự hiểm nguy và thiếu thốn của cuộc sống lính tráng. Đặc biệt, nhấn mạnh nỗi sợ hãi lớn nhất: <strong style=\"color: oklch(0.60 0.15 80);\">chết mà không được làm nghi thức mai táng</strong> truyền thống (đánh chiêng, gà cúng, vải trùm).
                 </p>
@@ -1025,10 +1030,10 @@ Kiếm phương Nam chẳng thấy<br>
 Anh phải biết nghĩ về anh<br>
 Đừng khoe khoang này nọ<br>
 Anh phải giấu mình đi thôi.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Khuyến khích giữ <strong style=\"color: oklch(0.60 0.15 80);\">lòng trong sáng, chung thủy</strong>, tránh xa cám dỗ vật chất <strong style=\"color: oklch(0.60 0.15 80);\">('bạc vàng')</strong>. Lên án việc lấy nhiều vợ (vợ hai, vợ ba), đề cao sự <strong style=\"color: oklch(0.60 0.15 80);\">tự trọng</strong>.
                 </p>
@@ -1072,9 +1077,10 @@ Cho mọi người nghe<br>
 Mọi người dần thuộc<br>
 Từ già đến trẻ<br>
 Tiếng hát đều hay.<br>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
 </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đây là lời <strong style=\"color: oklch(0.60 0.15 80);\">động viên, cổ vũ tinh thần</strong> người yêu/người vợ trong mọi hoàn cảnh. Ca dao sử dụng hình ảnh <strong style=\"color: oklch(0.60 0.15 80);\">thiên nhiên khắc nghiệt (mưa to, đường xa)</strong> để ẩn dụ cho những khó khăn trong cuộc sống, nhưng vẫn cần giữ thái độ <strong style=\"color: oklch(0.60 0.15 80);\">lạc quan, vui vẻ</strong>.
                 </p>
@@ -1142,7 +1148,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1211,7 +1217,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1287,7 +1293,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1352,7 +1358,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1424,7 +1430,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1493,7 +1499,7 @@ Tiếng hát đều hay.<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -1538,9 +1544,10 @@ Ta cùng lên rẫy<br/>
 Cùng làm cho nhanh<br/>
 Bà con ơi vui quá<br/>
 Cùng nhau ta đi làm thật nhiều.<br/>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Tập trung vào <strong style=\"color: oklch(0.60 0.15 80);\">lao động nông nghiệp</strong> (trồng bắp). Khuyến khích <strong style=\"color: oklch(0.60 0.15 80);\">tinh thần tập thể</strong>, cùng nhau làm việc nhanh chóng và vui vẻ.
                 </p>
@@ -1579,10 +1586,10 @@ Em đi làm thủy lợi<br/>
 Cho ruộng đủ nước tưới<br/>
 Hết cả dân làng ta<br/>
 Cùng đi làm thủy lợi.<br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đề cao <strong style=\"color: oklch(0.60 0.15 80);\">tinh thần hợp tác</strong> của toàn bộ buôn làng trong việc xây dựng công trình thủy lợi, nhằm <strong style=\"color: oklch(0.60 0.15 80);\">đảm bảo nguồn nước</strong> cho sản xuất nông nghiệp.
                 </p>
@@ -1619,10 +1626,10 @@ Chị em ta làm ruộng thật nhiều<br/>
 Chị em ta làm vườn thật lớn<br/>
 Ta trồng lúa, hoa màu nhiều thêm<br/>
 Cho buôn làng, đất nước đẹp giàu.<br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Ca ngợi tinh thần <strong style=\"color: oklch(0.60 0.15 80);\">hăng say lao động</strong> của phụ nữ và cộng đồng. Mục đích không chỉ là đủ ăn mà là <strong style=\"color: oklch(0.60 0.15 80);\">xây dựng buôn làng và đất nước giàu đẹp</strong>, thể hiện sự mở rộng nhận thức cộng đồng.
                 </p>
@@ -1662,10 +1669,10 @@ Hãy cố lên, ta xây dựng buôn làng<br/>
 Đi hãy đi, ta xây dựng đất nước<br/>
 Hãy đi, tất cả gái cùng trai<br/>
 Ta đi xây dựng nông trường cà phê.<br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Thể hiện sự <strong style=\"color: oklch(0.60 0.15 80);\">hưởng ứng phong trào khai hoang, xây dựng nông trường</strong>.  Nhấn mạnh vai trò của <strong style=\"color: oklch(0.60 0.15 80);\">thanh niên (gái trai)</strong> trong việc phát triển kinh tế mới (cà phê) và xây dựng quê hương
                 </p>
@@ -1726,10 +1733,10 @@ Lấy cái gùi ta đeo sau lưng<br/>
 Lấy cuốc rựa làm Đông Xuân<br/>
 Đất nước ta đã giải phong<br/>
 Núi rừng ta đã hòa bình.<br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span> [cite: 740, 742, 748, 753]
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Đây là bài ca dao mang tính <strong style=\"color: oklch(0.60 0.15 80);\">chính trị - thời sự</strong> rõ rệt, gắn liền sản xuất nông nghiệp (lúa Đông Xuân) với <strong style=\"color: oklch(0.60 0.15 80);\">ủng hộ cách mạng và xây dựng đất nước</strong> sau giải phóng.
                 </p>
@@ -1764,10 +1771,10 @@ Ta pla plơi ngă hma ia bẽ bing ching moak.<br/>
 Ở Thơi ơi, chàng Thơi... <br/>
 Đi làm ruộng nước cho to <br/>
 Muốn nhà ta nhiều lời nói vui <br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     **Dăm Thơi** là thể loại ca dao đặc trưng, thể hiện <strong style=\"color: oklch(0.60 0.15 80);\">tình mẫu tử sâu nặng</strong>. Nội dung thường gắn liền với ước mơ về <strong style=\"color: oklch(0.60 0.15 80);\">tương lai khỏe mạnh và sự tham gia vào lao động truyền thống</strong> của buôn làng (lên rẫy, đi săn) khi đứa trẻ lớn lên.
                 </p>
@@ -1805,10 +1812,10 @@ Ta làm vườn cho to<br/>
 Cố lên, ta làm tốt<br/>
 Góp phần xây đất nước<br/>
 Ta làm đi, ta làm.<br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài ca dao này phản ánh giai đoạn <strong style=\"color: oklch(0.60 0.15 80);\">chuyển đổi kinh tế</strong> từ canh tác lúa rẫy truyền thống sang trồng cây công nghiệp (cà phê, là sản phẩm chủ lực của Tây Nguyên).
                 </p>
@@ -1869,10 +1876,10 @@ Lượn duổi ta cũng cố <br/>
 Voi chặn ta vẫn gắng <br/>
 Nhanh chân lên chị ơi <br/>
 Nhanh đi cùng chúng tôi <br/>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài ca dao này mang tính chất <strong style=\"color: oklch(0.60 0.15 80);\">kêu gọi tập hợp và động viên</strong> cộng đồng trong mùa vụ (thun anai phang).
                 </p>
@@ -1948,7 +1955,7 @@ Nhanh đi cùng chúng tôi <br/>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -2014,7 +2021,7 @@ Nhanh đi cùng chúng tôi <br/>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -2060,10 +2067,10 @@ Anh ngắm em, em như hột cườm rung rinh<br>
 Anh ngắm em, em như hột cườm sóng đôi<br>
 Anh ngắm em, em như hột cườm pajĩ<br>
 Anh ngắm em, da em đẹp như chim a<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Sử dụng hình ảnh <strong style=\"color: oklch(0.60 0.15 80);\">quý giá và thiên nhiên</strong> (chim công, hột cườm) để ca ngợi vẻ đẹp của người con gái, đặc biệt tập trung vào <strong style=\"color: oklch(0.60 0.15 80);\">trang sức</strong> (hột cườm, pajĩ) như biểu tượng của vẻ đẹp và sự giàu có.
                 </p>
@@ -2111,10 +2118,10 @@ Em đeo bông ngà khít tai<br>
 Em đeo bông ngà chạm má<br>
 Váy áo em hợp dáng mình<br>
 Em như sao đêm lung linh<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Tình yêu được thể hiện qua hành động <strong style=\"color: oklch(0.60 0.15 80);\">chăm sóc và chuẩn bị của hồi môn/trang sức</strong>[cite: 498, 499]. Vòng bạc, bông ngà là biểu tượng cho tình yêu và sự giàu có[cite: 499, 502]. Bài ca dao nhấn mạnh vẻ đẹp tự nhiên và <strong style=\"color: oklch(0.60 0.15 80);\">lộng lẫy</strong> của người con gái[cite: 505].
                 </p>
@@ -2149,9 +2156,10 @@ Như con cò bay cao<br>
 Như chim khướu lượn ngang<br>
 Như chàng trăn sà xuống<br>
 Năm nay nhiều gái mến.<br>
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
 </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Sử dụng hình ảnh thiên nhiên <strong style=\"color: oklch(0.60 0.15 80);\">tuyệt đẹp (trăng tròn, chim bay)</strong> để bày tỏ tình yêu và sự cưng chiều. Kết thúc bằng lời than thở <strong style=\"color: oklch(0.60 0.15 80);\">ghen tuông</strong>, lo sợ người yêu được nhiều người khác mến mộ.
                 </p>
@@ -2183,10 +2191,10 @@ Adơi dỗ kiăng rim hrơi, ayong ơi...<br>
 Anh ơi hãy về đi anh<br>
 Anh về nhà đi<br>
 Em nhớ anh từng ngày, anh ơi...<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Là lời ca dao <strong style=\"color: oklch(0.60 0.15 80);\">ngắn gọn, chân thành</strong>, trực tiếp bày tỏ nỗi nhớ và mong muốn đoàn tụ.
                 </p>
@@ -2224,10 +2232,10 @@ Em ơi tôi muốn...<br>
 Tôi đi tìm em mỗi ngày mà chẳng thấy<br>
 Buồn lắm em ơi<br>
 Tôi đi tìm em, người đẹp ơi.<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Thể hiện sự <strong style=\"color: oklch(0.60 0.15 80);\">kiên trì nhưng thất vọng</strong> trong tình yêu (tìm mỗi ngày nhưng không thấy) , tạo ra cảm giác buồn bã, cô đơn.
                 </p>
@@ -2263,10 +2271,10 @@ Biết ngày nào ta gặp nhau trên đường<br>
 Biết tháng nào ta sẽ nhìn mặt em<br>
 Biết năm nào ngực sẽ sát đôi ngực<br>
 Hỡi người em gái ta thương<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Sử dụng yếu tố thời gian <strong style=\"color: oklch(0.60 0.15 80);\">(ngày, tháng, năm)</strong> để thể hiện sự mong ngóng và ước vọng mãnh liệt được gặp gỡ, đoàn tụ và <strong style=\"color: oklch(0.60 0.15 80);\">gần gũi</strong> với người yêu[cite: 587, 588, 589].
                 </p>
@@ -2302,10 +2310,10 @@ Tôi lăn mê say<br>
 Tôi kéo mép chăn<br>
 Tôi nhận lấy một<br>
 Tôi lấy cho bằng được<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Thể hiện sự <strong style=\"color: oklch(0.60 0.15 80);\">mãnh liệt, quyết liệt</strong> của tình yêu [cite: 601], với ý chí <strong style=\"color: oklch(0.60 0.15 80);\">chinh phục</strong> người yêu bằng mọi giá[cite: 604].
                 </p>
@@ -2355,10 +2363,10 @@ Kiếm quả blô cành cao<br>
 Cành thấp sà xuống nữa<br>
 Anh Duil ơi<br>
 Ước gì mình lấy được nhau<br>
-
+(Nguồn: Sách Dân Ca Gia Rai của Nguyễn Quang Tuệ, Nhà Xuất Bản Văn Hóa Dân Tộc-Hà Nội 2006)<br/>
                     </span>
                 </p>
-                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Phân tích:</h3>
+                <h3 style=\"color: oklch(0.18 0.02 80); font-size: 1.3em; margin-top: 25px; margin-bottom: 10px;\">Ý Nghĩa:</h3>
                 <p style=\"margin-bottom: 15px;\">
                     Bài ca dao thể hiện <strong style=\"color: oklch(0.60 0.15 80);\">nỗi buồn sâu sắc</strong> của cá nhân trước hoàn cảnh khó khăn hoặc sự cô độc. Đây là một dạng ca dao mang tính chất <strong style=\"color: oklch(0.60 0.15 80);\">phản ánh hiện thực</strong>, nơi con người bày tỏ sự bất lực trước số phận. Thường được sử dụng trong các dịp lễ bỏ mả hoặc khi có tang tóc, thể hiện <strong style=\"color: oklch(0.60 0.15 80);\">triết lý bi quan</strong> về đời người.
                 </p>
@@ -2419,7 +2427,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p>
@@ -2499,7 +2507,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2582,7 +2590,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2668,7 +2676,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2751,7 +2759,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2829,7 +2837,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2909,7 +2917,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2986,7 +2994,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3068,7 +3076,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3143,7 +3151,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3227,7 +3235,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3300,7 +3308,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3372,7 +3380,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3446,7 +3454,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3527,7 +3535,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3599,7 +3607,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3673,7 +3681,7 @@ Anh Duil ơi<br>
             margin-bottom: 10px;
           \"
         >
-          Phân tích &amp; Ý nghĩa Văn hóa:
+          Ý nghĩa:
         </h3>
       
         <p style=\"margin-bottom: 15px;\">
