@@ -30,7 +30,7 @@ export function Navigation() {
         {/* Logo */}
         <Link href="/">
           <motion.div
-            className="flex items-center gap-2 group cursor-pointer"
+            className="flex items-center gap-2.5  group cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
