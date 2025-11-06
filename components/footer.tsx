@@ -46,9 +46,9 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-background border-t border-primary/20 mt-24 overflow-hidden">
+    <footer className="relative bg-background/80 backdrop-blur-xl border-t border-primary/30 mt-24 overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
       {/* Jrai Pattern Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-15">
         <svg
           className="absolute inset-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
@@ -66,15 +66,22 @@ export function Footer() {
                 d="M40 10 L55 25 L40 40 L25 25 Z"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="1"
+                strokeWidth="1.5"
                 className="text-primary"
               />
               <circle
                 cx="40"
                 cy="25"
-                r="2"
+                r="2.5"
                 fill="currentColor"
                 className="text-primary"
+              />
+              <path
+                d="M20 60 Q30 55, 40 60 T60 60"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="text-secondary"
               />
             </pattern>
           </defs>
@@ -82,17 +89,22 @@ export function Footer() {
         </svg>
       </div>
 
-      {/* Ambient gradient orbs */}
+      {/* Enhanced ambient gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px]"
-          animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
+          className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/15 rounded-full blur-[150px]"
+          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 12, repeat: Infinity }}
         />
         <motion.div
-          className="absolute top-20 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px]"
-          animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.3, 0.2] }}
+          className="absolute top-20 right-0 w-[500px] h-[500px] bg-secondary/15 rounded-full blur-[120px]"
+          animate={{ scale: [1.2, 1, 1.2], opacity: [0.3, 0.4, 0.3] }}
           transition={{ duration: 15, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[100px]"
+          animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.4, 0.2] }}
+          transition={{ duration: 18, repeat: Infinity }}
         />
       </div>
 

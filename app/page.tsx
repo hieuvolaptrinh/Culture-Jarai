@@ -289,7 +289,7 @@ export default function Home() {
 
                     <Badge
                       variant="secondary"
-                      className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm text-lg px-3 py-1"
+                      className="absolute top-4 right-4 bg-linear-120 from-yellow-900/60  via-secondary to-yellow-600 text-lg px-3 py-1"
                     >
                       {exhibit.number}
                     </Badge>
@@ -360,7 +360,7 @@ export default function Home() {
                 >
                   Giữ hồn văn hóa,
                   <br />
-                  <span className="bg-linear-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
                     Kể chuyện Jrai bằng ánh sáng số
                   </span>
                 </motion.h2>

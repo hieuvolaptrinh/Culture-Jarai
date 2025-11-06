@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Navigation } from "@/components/navigation";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import { Footer } from "@/components/footer";
-import { JraiPattern } from "@/components/jrai-pattern";
+import { JraiTextilePattern } from "@/components/jrai-textile-pattern";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -35,8 +35,8 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${playfairDisplay.variable} font-sans antialiased bg-background text-foreground relative`}
       >
-        {/* Jrai Cultural Pattern Background */}
-        <JraiPattern className="fixed inset-0 z-0" opacity={0.04} />
+        {/* Jrai Cultural Textile Pattern Background */}
+        <JraiTextilePattern className="fixed inset-0 z-0" opacity={0.06} />
 
         <div className="relative z-10">
           <Navigation />

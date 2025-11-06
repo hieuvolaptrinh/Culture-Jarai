@@ -16,9 +16,9 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/60 border-b border-primary/20 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-background/70 border-b border-primary/30 shadow-lg shadow-primary/5">
       {/* Jrai Pattern Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
         <svg
           className="absolute inset-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,14 @@ export function Navigation() {
                 d="M30 10 L40 20 L30 30 L20 20 Z"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="1"
+                strokeWidth="1.5"
+                className="text-primary"
+              />
+              <circle
+                cx="30"
+                cy="20"
+                r="2"
+                fill="currentColor"
                 className="text-primary"
               />
             </pattern>
@@ -45,12 +52,17 @@ export function Navigation() {
         </svg>
       </div>
 
-      {/* Background gradient glow */}
+      {/* Enhanced gradient glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-0 right-1/4 w-96 h-32 bg-primary/10 rounded-full blur-3xl"
-          animate={{ x: [0, 50, 0], opacity: [0.3, 0.5, 0.3] }}
+          className="absolute top-0 left-1/4 w-96 h-24 bg-primary/15 rounded-full blur-3xl"
+          animate={{ x: [0, 100, 0], opacity: [0.4, 0.6, 0.4] }}
           transition={{ duration: 10, repeat: Infinity }}
+        />
+        <motion.div
+          className="absolute top-0 right-1/4 w-96 h-24 bg-secondary/15 rounded-full blur-3xl"
+          animate={{ x: [0, -100, 0], opacity: [0.3, 0.5, 0.3] }}
+          transition={{ duration: 12, repeat: Infinity }}
         />
       </div>
 
