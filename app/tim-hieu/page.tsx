@@ -100,7 +100,7 @@ export default function JraiCulturePage() {
             className="absolute inset-0 opacity-[0.08]"
             style={{
               backgroundImage: `radial-gradient(circle, currentColor 1px, transparent 1px)`,
-              backgroundSize: '40px 40px',
+              backgroundSize: "40px 40px",
             }}
           />
 

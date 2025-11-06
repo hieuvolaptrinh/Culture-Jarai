@@ -126,7 +126,7 @@ export default function AboutPage() {
             className="absolute inset-0 opacity-[0.08]"
             style={{
               backgroundImage: `radial-gradient(circle at 20% 50%, currentColor 1px, transparent 1px), radial-gradient(circle at 80% 50%, currentColor 1px, transparent 1px)`,
-              backgroundSize: '50px 50px',
+              backgroundSize: "50px 50px",
             }}
           />
 
