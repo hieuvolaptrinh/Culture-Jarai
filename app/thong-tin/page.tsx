@@ -84,7 +84,7 @@ export default function AboutPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <main className="min-h-screen text-foreground relative overflow-hidden">
         {/* Background decorations */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
           <motion.div
@@ -106,13 +106,73 @@ export default function AboutPage() {
 
         {/* HERO SECTION */}
         <section className="relative min-h-[70vh] flex items-center justify-center px-8 md:px-16 overflow-hidden pt-24">
-          <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-secondary/5" />
+          {/* Advanced Gradient Layers */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-linear-to-br from-primary/45 via-background/95 to-secondary/45" />
+            <div className="absolute inset-0 bg-linear-to-tr from-accent/25 via-transparent to-primary/25" />
+            <div className="absolute inset-0 bg-radial-gradient from-transparent via-background/50 to-background/80" />
+          </div>
+
+          {/* Sophisticated Pattern Layer */}
           <div
-            className="absolute inset-0 opacity-5"
+            className="absolute inset-0 opacity-[0.15]"
             style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='jrai-pattern' x='0' y='0' width='60' height='60' patternUnits='userSpaceOnUse'%3E%3Cpath d='M30 5 L45 20 L30 35 L15 20 Z' fill='none' stroke='%23000' stroke-width='0.5' opacity='0.3'/%3E%3Ccircle cx='30' cy='20' r='2' fill='%23000' opacity='0.2'/%3E%3Cpath d='M0 30 Q15 25, 30 30 T60 30' fill='none' stroke='%23000' stroke-width='0.8' opacity='0.2'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='120' height='120' fill='url(%23jrai-pattern)'/%3E%3C/svg%3E")`,
             }}
           />
+
+          {/* Mesh Gradient Overlay */}
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage: `radial-gradient(circle at 20% 50%, currentColor 1px, transparent 1px), radial-gradient(circle at 80% 50%, currentColor 1px, transparent 1px)`,
+              backgroundSize: '50px 50px',
+            }}
+          />
+
+          {/* Dynamic Animated Orbs */}
+          <motion.div
+            className="absolute top-0 left-1/4 w-[550px] h-[550px] bg-primary/35 rounded-full blur-[140px]"
+            animate={{
+              y: [0, 70, 0],
+              x: [0, 50, 0],
+              scale: [1, 1.3, 1],
+            }}
+            transition={{
+              duration: 24,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-secondary/35 rounded-full blur-[130px]"
+            animate={{
+              y: [0, -70, 0],
+              x: [0, -50, 0],
+              scale: [1.3, 1, 1.3],
+            }}
+            transition={{
+              duration: 28,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-accent/25 rounded-full blur-[120px]"
+            animate={{
+              scale: [1, 1.4, 1],
+              rotate: [0, 360],
+              opacity: [0.3, 0.6, 0.3],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* Premium Glass Effect */}
+          <div className="absolute inset-0 backdrop-blur-[1.5px] bg-background/8" />
 
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <motion.div

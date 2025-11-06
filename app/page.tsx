@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen  text-foreground overflow-hidden">
+      <main className="min-h-screen text-foreground overflow-hidden">
         {/* ========== HERO SECTION ========== */}
         <section
           ref={heroRef}
@@ -360,7 +360,7 @@ export default function Home() {
                 >
                   Giữ hồn văn hóa,
                   <br />
-                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  <span className="bg-linear-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
                     Kể chuyện Jrai bằng ánh sáng số
                   </span>
                 </motion.h2>

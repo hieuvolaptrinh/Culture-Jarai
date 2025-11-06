@@ -37,7 +37,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${playfairDisplay.variable} font-sans antialiased bg-background text-foreground relative`}
       >
         {/* Jrai Cultural Textile Pattern Background */}
-        <JraiTextilePattern className="fixed inset-0 z-0" opacity={0.06} />
+        <JraiTextilePattern className="fixed inset-0 z-0" opacity={0.16} />
 
         <div className="relative z-10">
           <Navigation />

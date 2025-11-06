@@ -16,9 +16,9 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-background/70 border-b border-primary/30 shadow-lg shadow-primary/5">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-2xl bg-background/95 border-b border-primary/40 shadow-xl shadow-primary/10">
       {/* Jrai Pattern Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
         <svg
           className="absolute inset-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"

@@ -97,7 +97,7 @@ export default function ExhibitsPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground">
+      <main className="min-h-screen text-foreground">
         {/* Hero Section */}
         <section className="relative py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
           <ScrollReveal>

@@ -46,9 +46,9 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-background/80 backdrop-blur-xl border-t border-primary/30 mt-24 overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+    <footer className="relative bg-background/95 backdrop-blur-xl border-t border-primary/40 mt-24 overflow-hidden shadow-[0_-10px_60px_rgba(0,0,0,0.2)]">
       {/* Jrai Pattern Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-15">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25">
         <svg
           className="absolute inset-0 w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
