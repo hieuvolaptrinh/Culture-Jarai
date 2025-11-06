@@ -456,37 +456,6 @@ export default function ExhibitDetailPage() {
             >
               {exhibit.fullDescription}
             </motion.p>
-
-            {/* CTA Button */}
-            <motion.div
-              className="mt-12 flex gap-4 justify-center flex-wrap"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a
-                  href="#content"
-                  className="px-8 py-3 rounded-lg bg-linear-to-r from-primary to-secondary text-white font-medium inline-block hover:shadow-lg hover:shadow-primary/50 transition-all"
-                >
-                  Khám phá thêm
-                </a>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link
-                  href="/di-san"
-                  className="px-8 py-3 rounded-lg border-2 border-primary/50 text-primary font-medium hover:bg-primary/10 transition-all"
-                >
-                  Quay lại
-                </Link>
-              </motion.div>
-            </motion.div>
           </motion.div>
         </section>
 

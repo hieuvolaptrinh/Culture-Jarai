@@ -1,11 +1,14 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react" // 1. Import useState and useEffect
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { PageTransition } from "@/components/page-transition"
-import { ScrollReveal } from "@/components/scroll-reveal"
-import { staggerContainerVariants, staggerItemVariants } from "@/lib/animations"
+import { useState, useEffect } from "react"; // 1. Import useState and useEffect
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { PageTransition } from "@/components/page-transition";
+import { ScrollReveal } from "@/components/scroll-reveal";
+import {
+  staggerContainerVariants,
+  staggerItemVariants,
+} from "@/lib/animations";
 
 // ... (Your exhibits data remains the same)
 const exhibits = [
@@ -13,7 +16,8 @@ const exhibits = [
     id: 1,
     title: "Ca dao",
     slug: "ca-dao",
-    description: "Ca dao của người Jrai phản ánh triết lý sống, kinh nghiệm lao động, về mối quan hệ giữa con người với thiên nhiên hùng vĩ.",
+    description:
+      "Ca dao của người Jrai phản ánh triết lý sống, kinh nghiệm lao động, về mối quan hệ giữa con người với thiên nhiên hùng vĩ.",
     image: "/images/tho.jpg",
     color: "from-primary/20 to-primary/5",
     accent: "primary",
@@ -22,7 +26,8 @@ const exhibits = [
     id: 2,
     title: "Tục ngữ",
     slug: "tuc-ngu",
-    description: " Thể loại sưu tầm tục ngữ thương là những câu nói ngắn gọn súc tích chứ đựng triết lý sống kinh nghiệm lao động ứng xử và giáo dục ông cha ta kể lại.",
+    description:
+      " Thể loại sưu tầm tục ngữ thương là những câu nói ngắn gọn súc tích chứ đựng triết lý sống kinh nghiệm lao động ứng xử và giáo dục ông cha ta kể lại.",
     image: "/images/tucngu.jpg",
     color: "from-accent/20 to-accent/5",
     accent: "accent",
@@ -31,28 +36,28 @@ const exhibits = [
     id: 3,
     title: "Truyện dân gian",
     slug: "truyen-dan-gian",
-    description: "Truyện dân gian Jrai mang phong cách mộc mạc nhưng giàu cảm xúc và nhân văn, thường chứa yếu tố kỳ ảo, siêu nhiên và thần thoại, phản ánh thế giới quan độc đáo của người Jrai.",
+    description:
+      "Truyện dân gian Jrai mang phong cách mộc mạc nhưng giàu cảm xúc và nhân văn, thường chứa yếu tố kỳ ảo, siêu nhiên và thần thoại, phản ánh thế giới quan độc đáo của người Jrai.",
     image: "/images/truyeb.jpg",
     color: "from-secondary/20 to-secondary/5",
     accent: "secondary",
-  }
-]
-
+  },
+];
 
 export default function ExhibitsPage() {
   // 2. Initialize a loading state
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   // 3. Simulate a data fetch/loading delay
   useEffect(() => {
     // In a real application, this is where you'd fetch data.
     // For this example, we use a setTimeout to simulate a 1-second load time.
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
+      setIsLoading(false);
+    }, 1000);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   // 4. Render a loading indicator if isLoading is true
   if (isLoading) {
@@ -81,11 +86,13 @@ export default function ExhibitsPage() {
                 d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
               ></path>
             </svg>
-            <p className="text-lg text-muted-foreground">Đang tải triển lãm...</p>
+            <p className="text-lg text-muted-foreground">
+              Đang tải triển lãm...
+            </p>
           </div>
         </main>
       </PageTransition>
-    )
+    );
   }
 
   // 5. Render the content once loading is complete
@@ -95,9 +102,12 @@ export default function ExhibitsPage() {
         {/* Hero Section */}
         <section className="relative py-20 px-4 md:px-8 max-w-7xl mx-auto">
           <ScrollReveal>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Triển lãm văn học</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              Triển lãm văn học
+            </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
-            Khám phá di sản văn học Jrai qua không gian số – nơi câu chuyện cổ vang vọng trong từng nhịp công nghệ hiện đại.
+              Khám phá di sản văn học Jrai qua không gian số – nơi câu chuyện cổ
+              vang vọng trong từng nhịp công nghệ hiện đại.
             </p>
           </ScrollReveal>
         </section>
@@ -116,7 +126,10 @@ export default function ExhibitsPage() {
                 <motion.div
                   className={`group cursor-pointer rounded-lg overflow-hidden bg-gradient-to-br ${exhibit.color} border border-border/50 hover:border-accent/50 transition-all duration-300`}
                   variants={staggerItemVariants}
-                  whileHover={{ y: -15, boxShadow: "0 20px 40px rgba(96, 165, 250, 0.1)" }}
+                  whileHover={{
+                    y: -15,
+                    boxShadow: "0 20px 40px rgba(96, 165, 250, 0.1)",
+                  }}
                 >
                   {/* Image Container */}
                   <div className="relative h-64 overflow-hidden bg-muted">
@@ -139,14 +152,16 @@ export default function ExhibitsPage() {
                     >
                       {exhibit.title}
                     </motion.h3>
-                    <p className="text-muted-foreground mb-4 line-clamp-3">{exhibit.description}</p>
+                    <p className="text-muted-foreground mb-4 line-clamp-3">
+                      {exhibit.description}
+                    </p>
 
                     <motion.div
                       className="flex items-center gap-2 text-accent font-semibold"
                       initial={{ x: 0 }}
                       whileHover={{ x: 5 }}
                     >
-                      Explore
+                      Khám Phá
                       <span>→</span>
                     </motion.div>
                   </div>
@@ -157,5 +172,5 @@ export default function ExhibitsPage() {
         </section>
       </main>
     </PageTransition>
-  )
+  );
 }
