@@ -1,12 +1,15 @@
-﻿"use client"
+﻿"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { Badge } from "@/components/ui/badge"
-import { staggerContainerVariants, staggerItemVariants } from "@/lib/animations"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import {
+  staggerContainerVariants,
+  staggerItemVariants,
+} from "@/lib/animations";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = [
     {
@@ -15,6 +18,7 @@ export function Footer() {
         { label: "Di sản văn học", href: "/di-san" },
         { label: "Ca dao", href: "/di-san/ca-dao" },
         { label: "Tục ngữ", href: "/di-san/tuc-ngu" },
+        { label: "Truyện dân gian", href: "/di-san/truyen-dan-gian" },
       ],
     },
     {
@@ -33,51 +37,109 @@ export function Footer() {
         { label: "Hợp tác với chúng tôi", href: "/lien-he" },
       ],
     },
-  ]
+  ];
 
   const socialLinks = [
-    { icon: "", label: "Blog", href: "#" },
-    { icon: "", label: "Facebook", href: "#" },
-    { icon: "", label: "Âm nhạc", href: "#" },
-  ]
+    { icon: "📝", label: "Blog", href: "#" },
+    { icon: "👥", label: "Facebook", href: "#" },
+    { icon: "🎵", label: "Âm nhạc", href: "#" },
+  ];
 
   return (
-    <footer className="relative bg-background border-t border-primary/10 mt-32 overflow-hidden">
+    <footer className="relative bg-background border-t border-primary/20 mt-24 overflow-hidden">
+      {/* Jrai Pattern Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
+        <svg
+          className="absolute inset-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="footer-pattern"
+              x="0"
+              y="0"
+              width="80"
+              height="80"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M40 10 L55 25 L40 40 L25 25 Z"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1"
+                className="text-primary"
+              />
+              <circle
+                cx="40"
+                cy="25"
+                r="2"
+                fill="currentColor"
+                className="text-primary"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#footer-pattern)" />
+        </svg>
+      </div>
+
+      {/* Ambient gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
+          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px]"
           animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
-          transition={{ duration: 10, repeat: Infinity }}
+          transition={{ duration: 12, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-32 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"
+          className="absolute top-20 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[120px]"
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.3, 0.2] }}
-          transition={{ duration: 12, repeat: Infinity }}
+          transition={{ duration: 15, repeat: Infinity }}
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-20">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-16">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 pb-12 border-b border-primary/10"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12 pb-12 border-b border-primary/20"
           initial="hidden"
           whileInView="visible"
           variants={staggerContainerVariants}
           viewport={{ once: true }}
         >
+          {/* Brand Section */}
           <motion.div variants={staggerItemVariants} className="lg:col-span-1">
-            <motion.div className="mb-4 inline-flex items-center gap-3">
-              <div className="w-12 h-12 rounded-lg bg-linear-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg">
-                
+            <motion.div className="mb-6 inline-flex items-center gap-3">
+              <div className="relative">
+                <div className="w-14 h-14 rounded-xl bg-linear-to-br from-primary via-primary/80 to-secondary flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/30">
+                  🏛️
+                </div>
+                <div className="absolute inset-0 rounded-xl border-2 border-primary/30" />
               </div>
-              <h3 className="text-lg font-bold tracking-wide">JRAI MUSEUM</h3>
+              <div className="flex flex-col">
+                <h3 className="text-xl font-bold tracking-wide bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  JRAI MUSEUM
+                </h3>
+                <span className="text-[10px] text-muted-foreground tracking-wider">
+                  VĂN HÓA DÂN GIAN
+                </span>
+              </div>
             </motion.div>
-            <p className="text-muted-foreground text-sm leading-relaxed">Lưu giữ và lan tỏa giá trị văn hóa Jrai qua công nghệ số.</p>
-            <div className="flex gap-2 mt-6">
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              Lưu giữ và lan tỏa giá trị văn hóa Jrai qua công nghệ số, kết nối
+              quá khứ với hiện tại.
+            </p>
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
-                <motion.div key={social.label} whileHover={{ scale: 1.1, y: -2 }} whileTap={{ scale: 0.95 }}>
+                <motion.div
+                  key={social.label}
+                  whileHover={{ scale: 1.15, y: -3 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <Link href={social.href}>
-                    <Badge variant="outline" className="cursor-pointer hover:bg-primary/10">
-                      {social.icon}
+                    <Badge
+                      variant="outline"
+                      className="cursor-pointer hover:bg-primary/10 hover:border-primary/40 transition-all w-10 h-10 flex items-center justify-center p-0"
+                      title={social.label}
+                    >
+                      <span className="text-base">{social.icon}</span>
                     </Badge>
                   </Link>
                 </motion.div>
@@ -85,14 +147,22 @@ export function Footer() {
             </div>
           </motion.div>
 
+          {/* Links Sections */}
           {footerLinks.map((section) => (
             <motion.div key={section.title} variants={staggerItemVariants}>
-              <h4 className="font-semibold text-foreground mb-5 text-sm">{section.title}</h4>
+              <h4 className="font-semibold text-foreground mb-5 text-sm tracking-wide flex items-center gap-2">
+                <div className="w-1 h-4 bg-linear-to-b from-primary to-secondary rounded-full" />
+                {section.title}
+              </h4>
               <ul className="space-y-3">
                 {section.links.map((link) => (
                   <li key={link.href}>
                     <Link href={link.href}>
-                      <motion.span className="text-muted-foreground text-sm hover:text-primary transition-colors" whileHover={{ x: 4 }}>
+                      <motion.span
+                        className="text-muted-foreground text-sm hover:text-primary transition-colors inline-flex items-center gap-2 group"
+                        whileHover={{ x: 4 }}
+                      >
+                        <span className="w-1 h-1 rounded-full bg-muted-foreground/50 group-hover:bg-primary transition-colors" />
                         {link.label}
                       </motion.span>
                     </Link>
@@ -103,27 +173,57 @@ export function Footer() {
           ))}
         </motion.div>
 
-        <motion.div className="flex flex-col md:flex-row justify-between items-center gap-8" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.3 }} viewport={{ once: true }}>
+        {/* Bottom Section */}
+        <motion.div
+          className="flex flex-col md:flex-row justify-between items-center gap-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <div className="text-center md:text-left">
-            <p className="text-muted-foreground text-sm mb-2"> {currentYear} Bảo Tàng Văn Học Dân Gian Jrai</p>
-            <p className="text-xs text-muted-foreground/60">Bảo tồn và tôn vinh di sản văn hóa Jrai</p>
+            <p className="text-muted-foreground text-sm mb-1.5 flex items-center gap-2 justify-center md:justify-start">
+              <span>©</span>
+              <span>{currentYear}</span>
+              <span className="text-primary">•</span>
+              <span>Bảo Tàng Văn Học Dân Gian Jrai</span>
+            </p>
+            <p className="text-xs text-muted-foreground/70">
+              Bảo tồn và tôn vinh di sản văn hóa Jrai
+            </p>
           </div>
 
-          <motion.div className="text-center md:text-right" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: true }}>
-            <div className="flex items-center justify-center md:justify-end gap-4 text-sm">
-              <div className="flex flex-col gap-1">
-                <span className="font-semibold">Đinh Đức Anh</span>
-                <span className="text-muted-foreground text-xs"> 0394 834 694</span>
+          <motion.div
+            className="text-center md:text-right"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-end gap-4 text-sm">
+              <div className="flex flex-col gap-1 px-4 py-2 rounded-lg bg-card/50 backdrop-blur-sm border border-border/50">
+                <span className="font-semibold text-foreground">
+                  Đinh Đức Anh
+                </span>
+                <span className="text-muted-foreground text-xs flex items-center gap-1.5">
+                  <span>📞</span>
+                  <span>0394 834 694</span>
+                </span>
               </div>
-              <div className="w-px h-8 bg-border/50" />
-              <div className="flex flex-col gap-1">
-                <span className="font-semibold">Rơ Lan H' Rê Ny</span>
-                <span className="text-muted-foreground text-xs"> 0362 745 894</span>
+              <div className="w-px h-12 bg-border/50 hidden sm:block" />
+              <div className="flex flex-col gap-1 px-4 py-2 rounded-lg bg-card/50 backdrop-blur-sm border border-border/50">
+                <span className="font-semibold text-foreground">
+                  Rơ Lan H' Rê Ny
+                </span>
+                <span className="text-muted-foreground text-xs flex items-center gap-1.5">
+                  <span>📞</span>
+                  <span>0362 745 894</span>
+                </span>
               </div>
             </div>
           </motion.div>
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

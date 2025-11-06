@@ -100,7 +100,7 @@ export default function ExhibitsPage() {
     <PageTransition>
       <main className="min-h-screen bg-background text-foreground">
         {/* Hero Section */}
-        <section className="relative py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <section className="relative py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
           <ScrollReveal>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               Triển lãm văn học
@@ -113,7 +113,7 @@ export default function ExhibitsPage() {
         </section>
 
         {/* Exhibits Grid */}
-        <section className="px-4 md:px-8 py-4 max-w-7xl mx-auto">
+        <section className="px-4 md:px-8 pb-20 max-w-7xl mx-auto">
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             initial="hidden"
@@ -124,7 +124,7 @@ export default function ExhibitsPage() {
             {exhibits.map((exhibit) => (
               <Link key={exhibit.id} href={`/di-san/${exhibit.slug}`}>
                 <motion.div
-                  className={`group cursor-pointer rounded-lg overflow-hidden bg-gradient-to-br ${exhibit.color} border border-border/50 hover:border-accent/50 transition-all duration-300`}
+                  className={`group cursor-pointer rounded-lg overflow-hidden bg-linear-to-br ${exhibit.color} border border-border/50 hover:border-accent/50 transition-all duration-300`}
                   variants={staggerItemVariants}
                   whileHover={{
                     y: -15,
@@ -140,7 +140,7 @@ export default function ExhibitsPage() {
                       whileHover={{ scale: 1.1 }}
                       transition={{ duration: 0.6 }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
                   </div>
 
                   {/* Content */}

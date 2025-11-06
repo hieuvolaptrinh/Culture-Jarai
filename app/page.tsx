@@ -38,7 +38,7 @@ export default function Home() {
           />
 
           {/* Gradient overlay: Đổi từ đen sang một lớp overlay màu nền nhạt, ấm áp */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-b from-background/90 via-background/60 to-background pointer-events-none" />
 
           {/* Ambient glowing orbs: Giữ nguyên hiệu ứng nhưng dùng màu sáng hơn (primary/secondary) */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -93,7 +93,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
                   Bảo Tàng
                 </span>
                 <br />
@@ -108,7 +108,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary" />
+                <div className="h-px w-12 bg-linear-to-r from-transparent to-primary" />
                 <span className="tracking-wider">
                   Giữ hồn văn hóa, kể chuyện Jrai bằng ánh sáng số
                 </span>
@@ -221,9 +221,9 @@ export default function Home() {
           </motion.div> */}
         </section>
         {/* ========== EXHIBIT SECTIONS ========== */}
-        <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto">
+        <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
           <ScrollReveal>
-            <div className="text-center mb-20">
+            <div className="text-center mb-16">
               <Badge
                 variant="outline"
                 className="mb-6 border-primary/50 text-primary"
@@ -284,7 +284,7 @@ export default function Home() {
                       transition={{ duration: 0.6 }}
                     />
                     <div
-                      className={`absolute inset-0 bg-gradient-to-t ${exhibit.gradient} to-background/80`}
+                      className={`absolute inset-0 bg-linear-to-t ${exhibit.gradient} to-background/80`}
                     />
 
                     <Badge
@@ -328,7 +328,7 @@ export default function Home() {
         <JraiLifeSection />
 
         {/* ========== CLOSING SECTION ========== */}
-        <section className="py-32 px-4 md:px-8 border-t border-border relative overflow-hidden">
+        <section className="py-20 px-4 md:px-8 border-t border-border relative overflow-hidden">
           {/* Background decoration */}
           <div className="absolute inset-0 pointer-events-none">
             <motion.div
@@ -360,7 +360,7 @@ export default function Home() {
                 >
                   Giữ hồn văn hóa,
                   <br />
-                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  <span className="bg-linear-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
                     Kể chuyện Jrai bằng ánh sáng số
                   </span>
                 </motion.h2>
