@@ -95,7 +95,6 @@ export default function ExhibitsPage() {
     );
   }
 
-  // 5. Render the content once loading is complete
   return (
     <PageTransition>
       <main className="min-h-screen bg-background text-foreground">

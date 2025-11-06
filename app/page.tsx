@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <PageTransition>
-      <main className="min-h-screen bg-background text-foreground overflow-hidden">
+      <main className="min-h-screen  text-foreground overflow-hidden">
         {/* ========== HERO SECTION ========== */}
         <section
           ref={heroRef}

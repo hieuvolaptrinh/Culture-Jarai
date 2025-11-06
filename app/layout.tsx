@@ -5,8 +5,9 @@ import { Analytics } from "@vercel/analytics/next";
 import { Navigation } from "@/components/navigation";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import { Footer } from "@/components/footer";
-import { JraiTextilePattern } from "@/components/jrai-textile-pattern";
+
 import "./globals.css";
+import { JraiTextilePattern } from "@/components/jrai-textile-pattern";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
