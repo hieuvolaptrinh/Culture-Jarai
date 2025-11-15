@@ -379,6 +379,7 @@ export default function AboutPage() {
                 ) : (
                   <video
                     src={item.src}
+                    controls={false}
                     muted
                     loop
                     className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500"
@@ -393,7 +394,7 @@ export default function AboutPage() {
 
           {/* Dialog xem ảnh / video chi tiết */}
           <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="min-w-[900px] bg-black/90 border-none p-0 overflow-hidden">
+            <DialogContent className="w-full min-w-full sm:min-w-[900px] bg-background border-0 p-0 overflow-hidden">
               {activeMedia && activeMedia.type === "image" && (
                 <img
                   src={activeMedia.src}
@@ -404,7 +405,7 @@ export default function AboutPage() {
               {activeMedia && activeMedia.type === "video" && (
                 <video
                   src={activeMedia.src}
-                  controls
+                  controls={false}
                   autoPlay
                   className="w-full h-auto object-contain"
                 />

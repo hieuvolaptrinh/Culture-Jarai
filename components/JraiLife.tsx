@@ -67,7 +67,7 @@ export default function JraiLifeSection() {
             đựng linh hồn của núi rừng.
           </p>
           <div className="max-w-7xl rounded-2xl overflow-hidden mt-5">
-            <video src="/images/video/IMG_3200.MOV" autoPlay muted loop></video>
+            <video  controls={false} src="/images/video/IMG_3200.MOV" autoPlay muted loop></video>
           </div>
         </div>
       </section>
@@ -85,12 +85,12 @@ export default function JraiLifeSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {mediaItems.map((item, i) => (
-            <motion.div
+            <div
               key={i}
               className="relative cursor-pointer overflow-hidden rounded-xl shadow-md group"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1, duration: 0.6 }}
+              // initial={{ opacity: 0, y: 30 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ delay: i * 0.1, duration: 0.6 }}
               onClick={() => {
                 setActiveMedia(item);
                 setOpen(true);
@@ -107,6 +107,7 @@ export default function JraiLifeSection() {
               ) : (
                 <video
                   src={item.src}
+                  controls={false}
                   muted
                   playsInline
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
@@ -115,14 +116,14 @@ export default function JraiLifeSection() {
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-lg font-medium">
                 {item.title}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
 
       {/* Modal xem chi tiết */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="min-w-[900px] bg-black/90 border-none p-0 overflow-hidden">
+        <DialogContent className="w-full min-w-full sm:min-w-[900px] bg-background border-0 p-0 overflow-hidden">
           {activeMedia && activeMedia.type === "image" && (
             <Image
               src={activeMedia.src}
@@ -135,7 +136,7 @@ export default function JraiLifeSection() {
           {activeMedia && activeMedia.type === "video" && (
             <video
               src={activeMedia.src}
-              controls
+              controls={false}
               autoPlay
               muted
               loop
