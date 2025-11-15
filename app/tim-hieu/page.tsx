@@ -84,7 +84,7 @@ export default function JraiCulturePage() {
           {/* Animated Gradient Background */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-linear-to-br from-primary/40 via-background/95 to-secondary/40" />
-            <div className="absolute inset-0 bg-linear-to-tr from-accent/20 via-transparent to-primary/20" />
+            <div className="absolute inset-0 bg-linear-to-tr from-accent/20 via-transparent to-primary/20 " />
           </div>
 
           {/* Geometric Pattern Layer */}
