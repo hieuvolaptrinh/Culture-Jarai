@@ -44,7 +44,7 @@ const exhibitDetails: Record<
         content: `Ca dao Jrai về gia đình thường nhấn mạnh lòng biết ơn cha mẹ và giá trị của lao động. Ví dụ như câu:<br/><br/>
         <div style="display: grid;gap: 1rem;grid-template-columns: 1fr 1fr;">
           <div>
-          'po tao nai ami<br/>
+          'Po tao nai ami<br/>
 Po tao nao ama<br/>
 H' dong nai h' dong kha<br/>
 Bơ nai bơr miêng'
@@ -392,11 +392,10 @@ export default function ExhibitDetailPage() {
                   />
 
                   <div
-                    className={`grid ${
-                      section.title === "Truyện cổ tích"
+                    className={`grid ${section.title === "Truyện cổ tích"
                         ? "md:grid-cols-1"
                         : "md:grid-cols-2"
-                    } gap-16 items-center`}
+                      } gap-16 items-center`}
                   >
                     {/* Content Left / Image Right */}
                     {isEven ? (

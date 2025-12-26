@@ -27,7 +27,7 @@ export default function CaDaoGiaDinhDetail() {
   const params = useParams();
   const story = params.story as string;
   const detailData = mockData.find((item) => item.slug === story);
-    const router = useRouter()
+  const router = useRouter()
   if (!detailData) return "no data";
   return (
     <motion.div
@@ -41,7 +41,7 @@ export default function CaDaoGiaDinhDetail() {
         <motion.div className="mb-12 md:mb-16" variants={itemVariants}>
           {/* <SectionHeader title={detailData.subtitle} /> */}
           <h1 className="text-5xl md:text-7xl font-extrabold text-foreground mt-2 mb-4 max-w-4xl">
-            Tác phẩm: {detailData.subtitle}
+            {detailData.subtitle}
           </h1>
           <Separator className="bg-primary/50 h-1 w-20 mb-8" />
 
@@ -71,16 +71,15 @@ export default function CaDaoGiaDinhDetail() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {/* Cột 1: Hình ảnh và Gốc/Dịch nghĩa */}
-                  <motion.div className="space-y-8" variants={itemVariants}>
+                  <motion.div className="space-y-8 self-center" variants={itemVariants}>
                     {/* Ảnh riêng cho từng bài ca dao */}
-                    <div className="w-full h-full aspect-square overflow-hidden rounded-lg shadow-xl border border-border/70">
+                    <div className="w-full aspect-square overflow-hidden rounded-lg shadow-xl border border-border/70">
                       <img
                         src={item.image}
                         alt={item.subtitle}
                         className="w-full h-full object-cover"
                       />
                     </div>
-
                     {/* Card Gốc & Dịch nghĩa */}
                   </motion.div>
 
@@ -114,7 +113,7 @@ export default function CaDaoGiaDinhDetail() {
 
         {/* Thanh điều hướng/ Quay lại */}
         <motion.div className="mt-20 text-center" variants={itemVariants}>
-          <button onClick={()=>router.back()} className="text-primary hover:text-primary/80 transition-colors flex items-center justify-center mx-auto">
+          <button onClick={() => router.back()} className="text-primary hover:text-primary/80 transition-colors flex items-center justify-center mx-auto">
             <svg
               className="w-5 h-5 mr-2"
               fill="none"

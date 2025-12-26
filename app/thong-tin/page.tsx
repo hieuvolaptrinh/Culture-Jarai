@@ -237,7 +237,7 @@ export default function AboutPage() {
                 dân gian của người Jrai trên nền tảng số.
               </p>
               <p className="text-lg text-foreground leading-relaxed">
-                Dự án không chỉ hỗ trợ học tập mà còn là bước nhỏ nhưng ý nghĩa
+                Dự án không chỉ hỗ trợ học tập mà còn là bước nhỏ nhưng Ý nghĩa
                 trong hành trình bảo tồn và tôn vinh bản sắc văn hóa dân tộc nơi
                 đại ngàn Tây Nguyên.
               </p>
