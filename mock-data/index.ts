@@ -746,12 +746,12 @@ Công ơn mẹ từng ấy.<br>
       },
       {
         "slug": "ca-dao-kinh-nghiem-ich-ki",
-        "subtitle": "Ca dao: MƠNUIH NHỮM PAI BU THÂO GLÁI POSANG (ÍCH KỈ)",
+        "subtitle": "Lên án Thói ích kỉ và Nghiện rượu",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🍺 Lên án Thói ích kỉ và Nghiện rượu
+                    🍺 MƠNUIH NHỮM PAI BU THÂO GLÁI POSANG (ÍCH KỈ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -837,12 +837,12 @@ Như thịt dính răng<br>
       },
       {
         "slug": "ca-dao-kinh-nghiem-me-bo-con",
-        "subtitle": "39. Ca dao: AMĨ LUI ANĂ (NGƯỜI MẸ BỎ CON)",
+        "subtitle": "Tội nghiệp và lời kêu gọi",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    👶 Tội nghiệp và Lời kêu gọi
+                    👶 AMĨ LUI ANĂ (NGƯỜI MẸ BỎ CON)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -892,12 +892,12 @@ Này đây, hãy nuôi con chúng ta...<br>
       },
       {
         "slug": "ca-dao-kinh-nghiem-con-oi",
-        "subtitle": "Ca dao: DĂM ƠI (CON ƠI)",
+        "subtitle": "Cảnh báo về Cuộc sống Lính tráng",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    ⚔️ Cảnh báo về Cuộc sống Lính tráng
+                    ⚔️ DĂM ƠI (CON ƠI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -966,12 +966,12 @@ Nếu mà con chết đi...<br>
       },
       {
         "slug": "ca-dao-kinh-nghiem-chung-thuy",
-        "subtitle": "41. Ca dao: IH PƠDỜP GLĂI PÔ IH (CHUNG THỦY)",
+        "subtitle": " Đề cao Sự trong sáng và Chung thủy",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💎 Đề cao Sự trong sáng và Chung thủy
+                    💎IH PƠDỜP GLĂI PÔ IH (CHUNG THỦY)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1042,12 +1042,12 @@ Anh phải giấu mình đi thôi.<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-vui-len",
-        "subtitle": "Ca dao: ADƠI ADÔH MOẮK (EM HÁT HAY)",
+        "subtitle": " Lời động viên và Hứa hẹn",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😄 Lời động viên và Hứa hẹn
+                    😄 ADƠI ADÔH MOẮK (EM HÁT HAY)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Tơpai mơnhum lu<br>
@@ -1514,12 +1514,12 @@ Tiếng hát đều hay.<br>
       },
       {
         "slug": "ca-dao-lao-dong-trong-bap",
-        "subtitle": "Ca dao: YAN PHANG PLA KTƠR HANG BẼ LÀ (MÙA HÈ TRỒNG BẮP BÊN SUỐI)",
+        "subtitle": "Khuyến khích Lao động Tập thể",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🌽 Khuyến khích Lao động Tập thể
+                    🌽 YAN PHANG PLA KTƠR HANG BẼ LÀ (MÙA HÈ TRỒNG BẮP BÊN SUỐI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1556,12 +1556,12 @@ Cùng nhau ta đi làm thật nhiều.<br/>
       },
       {
         "slug": "ca-dao-lao-dong-thuy-loi",
-        "subtitle": "Ca dao: NAO NGÃ THUY LƠI (ĐI LÀM THỦY LỢI)",
+        "subtitle": "Hợp tác vì Nguồn nước",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💧 Hợp tác vì Nguồn nước
+                    💧 NAO NGÃ THUY LƠI (ĐI LÀM THỦY LỢI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1598,12 +1598,12 @@ Cùng đi làm thủy lợi.<br/>
       },
       {
         "slug": "ca-dao-lao-dong-lam-ruong",
-        "subtitle": "Ca dao: NGÃ HMA (LÀM RUỘNG)",
+        "subtitle": "Xây dựng Buôn làng Giàu đẹp",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🌾 Xây dựng Buôn làng Giàu đẹp
+                    🌾 NGÃ HMA (LÀM RUỘNG)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1638,12 +1638,12 @@ Cho buôn làng, đất nước đẹp giàu.<br/>
       },
       {
         "slug": "ca-dao-lao-dong-khai-hoang",
-        "subtitle": "Ca dao: NAO NGÃ KHAI HOANG (ĐI KHAI HOANG)",
+        "subtitle": "Tinh thần xây dựng Nông trường mới",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🛠️ Tinh thần xây dựng Nông trường mới
+                    🛠️ NAO NGÃ KHAI HOANG (ĐI KHAI HOANG)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1681,12 +1681,12 @@ Ta đi xây dựng nông trường cà phê.<br/>
       },
       {
         "slug": "ca-dao-lao-dong-dong-xuan",
-        "subtitle": "Ca dao: TA GŨ BRUĂ ĐÔNG XUÂN (LÀM LÚA ĐÔNG XUÂN)",
+        "subtitle": "Gắn kết Lao động và Cách mạng",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💪 Gắn kết Lao động và Cách mạng
+                    💪 TA GŨ BRUĂ ĐÔNG XUÂN (LÀM LÚA ĐÔNG XUÂN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1745,7 +1745,7 @@ Núi rừng ta đã hòa bình.<br/>
       },
       {
         "slug": "ca-dao-gia-dinh-loi-ru",
-        "subtitle": "56. Ca dao: DĂM THƠI (LỜI RU)",
+        "subtitle": "Tình mẫu tử",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
@@ -1783,12 +1783,12 @@ Muốn nhà ta nhiều lời nói vui <br/>
       },
       {
         "slug": "ca-dao-lao-dong-ca-phe",
-        "subtitle": "Ca dao: TA NAO NGÃ BẼ ĐĂNG KA PHE (TA CÙNG LÀM CÀ PHÊ)",
+        "subtitle": "Tinh thần Xây dựng Kinh tế mới",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    ☕ Tinh thần Xây dựng Kinh tế mới
+                    ☕ TA NAO NGÃ BẼ ĐĂNG KA PHE (TA CÙNG LÀM CÀ PHÊ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1832,12 +1832,12 @@ Ta làm đi, ta làm.<br/>
       },
       {
         "slug": "ca-dao-lao-dong-mut-hrom",
-        "subtitle": "60. Ca dao: MUT HROM Ơ (CÙNG NHAU HỘI TỤ)",
+        "subtitle": "Kêu gọi Đoàn kết và Hăng hái Lao động",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🤝 Kêu gọi Đoàn kết và Hăng hái Lao động
+                    🤝 MUT HROM Ơ (CÙNG NHAU HỘI TỤ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2038,12 +2038,12 @@ Nhanh đi cùng chúng tôi <br/>
       },
       {
         "slug": "ca-dao-tinh-yeu-nhin-em",
-        "subtitle": "Ca dao: DĂNG ADƠI (NHÌN EM)",
+        "subtitle": "Ca ngợi Vẻ đẹp Người yêu",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💎 Ca ngợi Vẻ đẹp Người yêu
+                    💎 DĂNG ADƠI (NHÌN EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Hmữ mơng ataih kar hang jua blang<br>
@@ -2079,12 +2079,12 @@ Anh ngắm em, da em đẹp như chim a<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-lam-dep",
-        "subtitle": "Ca dao: PƠHRUP BRƠI KƠ ADƠI HIAM (LÀM ĐẸP CHO EM)",
+        "subtitle": "Tình yêu qua trang sức và lao động",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🎁 Tình yêu qua Trang sức và Lao động
+                    🎁 PƠHRUP BRƠI KƠ ADƠI HIAM (LÀM ĐẸP CHO EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2130,12 +2130,12 @@ Em như sao đêm lung linh<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-anh-yeu",
-        "subtitle": "Ca dao: AYONG JŨ (ANH YÊU)",
+        "subtitle": "Lời cưng chiều và Nỗi lo ghen tuông",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💕 Lời cưng chiều và Nỗi lo ghen tuông
+                    💕 AYONG JŨ (ANH YÊU)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Ayong jũ rơbũk kơ blan<br>
@@ -2168,12 +2168,12 @@ Năm nay nhiều gái mến.<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-em-nho",
-        "subtitle": "Ca dao: ADƠI RƠNGOT (EM NHỚ)",
+        "subtitle": "Lời tỏ tình và Nỗi nhớ thường nhật",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💬 Lời tỏ tình và Nỗi nhớ thường nhật
+                    💬 ADƠI RƠNGOT (EM NHỚ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Ơ ayong, adơi kiăng rơngot đơi anai<br>
@@ -2203,12 +2203,12 @@ Em nhớ anh từng ngày, anh ơi...<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-tim-em",
-        "subtitle": "Ca dao: DUAH BNAI HIAM BIĂ (TÌM EM)",
+        "subtitle": " Nỗi buồn và Sự kiếm tìm",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😔 Nỗi buồn và Sự kiếm tìm
+                    😔 DUAH BNAI HIAM BIĂ (TÌM EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2244,12 +2244,12 @@ Tôi đi tìm em, người đẹp ơi.<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-hoi-em",
-        "subtitle": "Ca dao: ƠI ADƠI (HỠI EM)",
+        "subtitle": "Ước vọng Đoàn tụ",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🔮 Ước vọng Đoàn tụ
+                    🔮 ƠI ADƠI (HỠI EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2283,12 +2283,12 @@ Hỡi người em gái ta thương<br>
       },
       {
         "slug": "ca-dao-tinh-yeu-toi-dang-den",
-        "subtitle": "Ca dao: KÂO NAO TRUH (TÔI ĐANG ĐẾN)",
+        "subtitle": "Quyết tâm Chinh phục",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🏃‍♂️ Quyết tâm Chinh phục
+                    🏃‍♂️ KÂO NAO TRUH (TÔI ĐANG ĐẾN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2322,12 +2322,12 @@ Tôi lấy cho bằng được<br>
       },
       {
         "slug": "ca-dao-kinh-nghiem-than-tho",
-        "subtitle": "Ca dao: AI DUIL (THAN THÂN TRÁCH PHẬN)",
+        "subtitle": "Tiếng than khổ đau",
         image: "/images/att.TW4KYPsUL5rnsRqIMG6wereTqC4XMPaYNRtMPX79enI.JPG",
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😢 Ai Duil (Tiếng than Khổ đau)
+                    😢 AI DUIL (THAN THÂN TRÁCH PHẬN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -3050,7 +3050,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🔥 Thần linh Tự nhiên (Ama ia, ama hluh)
+          🔥 Ama ia, ama hluh (Thần linh Tự nhiên)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3125,7 +3125,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🤝 Tình Anh Em (Agong dơi dơi alinh lẽ ngăn)
+          🤝 Agong dơi dơi alinh lẽ ngăn (Tình Anh Em)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3209,7 +3209,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          💪 Giá trị của Mồ hôi (Ngã dleh, rơ beh bong)
+          💪 Ngã dleh, rơ beh bong (Giá trị của Mồ hôi)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3282,7 +3282,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          👋 Niềm vui Hội ngộ (Mã tơn gan apan drơi)
+          👋 Mã tơn gan apan drơi (Niềm vui Hội ngộ)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3354,7 +3354,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌱 Dạy dỗ từ Thơ ấu (Kơ yây anet nhu guen tơ pă)
+          🌱 Kơ yây anet nhu guen tơ pă (Dạy dỗ từ Thơ ấu)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3428,7 +3428,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌍 Cội nguồn Đất mẹ (Hrơi hngoan siu ia)
+          🌍 Hrơi hngoan siu ia (Cội nguồn Đất mẹ)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3509,7 +3509,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          👑 Trật tự Buôn làng (Hlang ia tơ đeh, h’lang pơ tao kơ niê)
+          👑 Hlang ia tơ đeh, h’lang pơ tao kơ niê (Trật tự Buôn làng) 
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3581,7 +3581,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🏡 Nơi an cư (Kon chim mầu, gu mạ nui mâu plơi)
+          🏡 Kon chim mầu, gu mạ nui mâu plơi (Nơi an cư)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3655,7 +3655,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          💧 Biết ơn Nguồn sống (Amania a nai, ama phă ia pơm)
+          💧 Amania a nai, ama phă ia pơm (Biết ơn Nguồn sống)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">

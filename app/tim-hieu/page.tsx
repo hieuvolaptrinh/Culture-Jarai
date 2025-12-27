@@ -209,11 +209,8 @@ export default function JraiCulturePage() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-foreground/50 to-transparent p-6 flex flex-col justify-end">
-                    <span className="text-4xl mb-2 text-white">
-                      {item.icon}
-                    </span>{" "}
                     {/* Đổi màu icon trên nền ảnh */}
-                    <p className="text-sm font-semibold uppercase tracking-wider text-background/80">
+                    <p className="text-[1.3rem] font-semibold uppercase tracking-wider text-background/80">
                       {item.subtitle}
                     </p>
                   </div>

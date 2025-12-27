@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/section-header";
 import { Card, CardContent } from "@/components/ui/card";
@@ -27,7 +28,16 @@ export default function CaDaoGiaDinhDetail() {
   const params = useParams();
   const story = params.story as string;
   const detailData = mockData.find((item) => item.slug === story);
-  const router = useRouter()
+  const router = useRouter();
+
+  // State để quản lý expand/collapse cho từng story item
+  const [expandedStories, setExpandedStories] = useState<Record<number, boolean>>({});
+
+  // Toggle expand/collapse
+  const toggleExpand = (index: number) => {
+    setExpandedStories(prev => ({ ...prev, [index]: !prev[index] }));
+  };
+
   if (!detailData) return "no data";
   return (
     <motion.div
@@ -87,12 +97,49 @@ export default function CaDaoGiaDinhDetail() {
                   <motion.div className="" variants={itemVariants}>
                     <Card className="bg-card border-l-4 border-primary rounded-lg shadow-lg">
                       <CardContent className="p-6">
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: item.body,
-                          }}
-                          className="prose max-w-none text-foreground/80 space-y-4 [&>strong]:text-foreground [&>em]:text-primary/90"
-                        />
+                        {/* Content wrapper với expand/collapse */}
+                        <div className="relative">
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedStories[index] ? "" : "max-h-[450px]"
+                              }`}
+                          >
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: item.body,
+                              }}
+                              className="prose max-w-none text-foreground/80 space-y-4 [&>strong]:text-foreground [&>em]:text-primary/90"
+                            />
+                          </div>
+
+                          {/* Gradient fade khi collapsed */}
+                          {!expandedStories[index] && (
+                            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-card to-transparent pointer-events-none" />
+                          )}
+                        </div>
+
+                        {/* Nút Xem thêm/Thu gọn */}
+                        <div className="mt-4 flex justify-center">
+                          <button
+                            onClick={() => toggleExpand(index)}
+                            className="text-sm font-semibold text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2 px-4 py-2 rounded-md hover:bg-primary/5"
+                          >
+                            <span>{expandedStories[index] ? "Thu gọn" : "Xem thêm"}</span>
+                            <svg
+                              className={`w-4 h-4 transform transition-transform duration-300 ${expandedStories[index] ? "rotate-180" : "rotate-0"
+                                }`}
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M19 9l-7 7-7-7"
+                              />
+                            </svg>
+                          </button>
+                        </div>
                       </CardContent>
                     </Card>
                   </motion.div>
