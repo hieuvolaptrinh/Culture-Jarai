@@ -32,7 +32,7 @@ export const mockData = [
             padding-bottom: 5px;
           "
         >
-          🌾 Pơ tao nai ami (Cây lúa của mẹ)
+           Pơ tao nai ami (Cây lúa của mẹ)
         </h2>
       
         <p style="margin-bottom: 15px;">
@@ -102,7 +102,7 @@ export const mockData = [
             padding-bottom: 5px;
           "
         >
-          🗣️ Kơ sih dia kơ sih (Đạo lý Hiếu thảo)
+           Kơ sih dia kơ sih (Đạo lý Hiếu thảo)
         </h2>
       
         <p style="margin-bottom: 15px;">
@@ -154,7 +154,7 @@ export const mockData = [
         body: `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    👨‍👩‍👧‍👦 Dăm Brông (Tình yêu và Trách nhiệm)
+                     Dăm Brông (Tình yêu và Trách nhiệm)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -228,7 +228,7 @@ Em thích cầm con cá duôi dài<br>
         body: `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🙏 Hrơi Anal (Làng ta hôm nay)
+                     Hrơi Anal (Làng ta hôm nay)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -279,7 +279,7 @@ Ngày mai chẳng còn gì"... <br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💔 Nao ayong, anam nao ( Anh đừng đi)
+                     Nao ayong, anam nao ( Anh đừng đi)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -395,7 +395,7 @@ Nào nhanh lên, nhanh lên anh ơi.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😔 PAP ĐƠI (Thương nhớ)
+                     PAP ĐƠI (Thương nhớ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -431,7 +431,7 @@ Con đang khóc, em hãy về đi.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    👶 ANĂ TA (CON CHÚNG TA)
+                     ANĂ TA (CON CHÚNG TA)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -472,7 +472,7 @@ Biết theo cha đi săn.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🙏 HDƠN ƠI YĂ, AMI AMA (Nhớ ơn ông bà, cha mẹ)
+                     HDƠN ƠI YĂ, AMI AMA (Nhớ ơn ông bà, cha mẹ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -524,7 +524,7 @@ Rãy cũ thành rừng ta vẫn không quên.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    ❤️ NAO PƠ HMA (LÊN RẪY)
+                     NAO PƠ HMA (LÊN RẪY)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -631,7 +631,7 @@ Công ơn mẹ từng ấy.<br>
       padding-bottom: 5px;
     \"
   >
-    🌾 Yang cho ho khơn (Ruộng cho lúa)
+     Yang cho ho khơn (Ruộng cho lúa)
   </h2>
 
   <p style=\"margin-bottom: 15px;\">
@@ -703,7 +703,7 @@ Công ơn mẹ từng ấy.<br>
       padding-bottom: 5px;
     \"
   >
-    💪 Dleh Ngă hmă hmão pơdai (Tinh thần Cần cù)
+     Dleh Ngă hmă hmão pơdai (Tinh thần Cần cù)
   </h2>
 
   <p style=\"margin-bottom: 15px;\">
@@ -751,7 +751,7 @@ Công ơn mẹ từng ấy.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🍺 MƠNUIH NHỮM PAI BU THÂO GLÁI POSANG (ÍCH KỈ)
+                     MƠNUIH NHỮM PAI BU THÂO GLÁI POSANG (ÍCH KỈ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -842,7 +842,7 @@ Như thịt dính răng<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    👶 AMĨ LUI ANĂ (NGƯỜI MẸ BỎ CON)
+                     AMĨ LUI ANĂ (NGƯỜI MẸ BỎ CON)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -897,7 +897,7 @@ Này đây, hãy nuôi con chúng ta...<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    ⚔️ DĂM ƠI (CON ƠI)
+                     DĂM ƠI (CON ƠI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -971,7 +971,7 @@ Nếu mà con chết đi...<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💎IH PƠDỜP GLĂI PÔ IH (CHUNG THỦY)
+                    IH PƠDỜP GLĂI PÔ IH (CHUNG THỦY)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1047,7 +1047,7 @@ Anh phải giấu mình đi thôi.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😄 ADƠI ADÔH MOẮK (EM HÁT HAY)
+                     ADƠI ADÔH MOẮK (EM HÁT HAY)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Tơpai mơnhum lu<br>
@@ -1122,7 +1122,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          🥁 Gơ sang chiêng pơ hlâm (Lời gọi của Cồng Chiêng)
+           Gơ sang chiêng pơ hlâm (Lời gọi của Cồng Chiêng)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1191,7 +1191,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          🔄 Tương sinh - Nước và Cây
+           Tương sinh - Nước và Cây
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1267,7 +1267,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          💧 Ca ngợi Ơn Trời và Nguồn Nước
+           Ca ngợi Ơn Trời và Nguồn Nước
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1332,7 +1332,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          ☀️ Pơ tao rang, pơtao rứng (Đồng hồ Tự nhiên)
+           Pơ tao rang, pơtao rứng (Đồng hồ Tự nhiên)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1401,7 +1401,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          💖 Yêu Mến Rừng và Cô gái Jrai
+           Yêu Mến Rừng và Cô gái Jrai
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1473,7 +1473,7 @@ Tiếng hát đều hay.<br>
             padding-bottom: 5px;
           \"
         >
-          🤝 Tình Anh Em Vĩnh Cửu
+           Tình Anh Em Vĩnh Cửu
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1519,7 +1519,7 @@ Tiếng hát đều hay.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🌽 YAN PHANG PLA KTƠR HANG BẼ LÀ (MÙA HÈ TRỒNG BẮP BÊN SUỐI)
+                     YAN PHANG PLA KTƠR HANG BẼ LÀ (MÙA HÈ TRỒNG BẮP BÊN SUỐI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1561,7 +1561,7 @@ Cùng nhau ta đi làm thật nhiều.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💧 NAO NGÃ THUY LƠI (ĐI LÀM THỦY LỢI)
+                     NAO NGÃ THUY LƠI (ĐI LÀM THỦY LỢI)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1603,7 +1603,7 @@ Cùng đi làm thủy lợi.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🌾 NGÃ HMA (LÀM RUỘNG)
+                     NGÃ HMA (LÀM RUỘNG)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1643,7 +1643,7 @@ Cho buôn làng, đất nước đẹp giàu.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🛠️ NAO NGÃ KHAI HOANG (ĐI KHAI HOANG)
+                     NAO NGÃ KHAI HOANG (ĐI KHAI HOANG)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1686,7 +1686,7 @@ Ta đi xây dựng nông trường cà phê.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💪 TA GŨ BRUĂ ĐÔNG XUÂN (LÀM LÚA ĐÔNG XUÂN)
+                     TA GŨ BRUĂ ĐÔNG XUÂN (LÀM LÚA ĐÔNG XUÂN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1750,7 +1750,7 @@ Núi rừng ta đã hòa bình.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🎶 Dăm Thơi (Lời Ru của Mẹ)
+                     Dăm Thơi (Lời Ru của Mẹ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1788,7 +1788,7 @@ Muốn nhà ta nhiều lời nói vui <br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    ☕ TA NAO NGÃ BẼ ĐĂNG KA PHE (TA CÙNG LÀM CÀ PHÊ)
+                     TA NAO NGÃ BẼ ĐĂNG KA PHE (TA CÙNG LÀM CÀ PHÊ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1837,7 +1837,7 @@ Ta làm đi, ta làm.<br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🤝 MUT HROM Ơ (CÙNG NHAU HỘI TỤ)
+                     MUT HROM Ơ (CÙNG NHAU HỘI TỤ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -1929,7 +1929,7 @@ Nhanh đi cùng chúng tôi <br/>
             padding-bottom: 5px;
           \"
         >
-          ⛰️ Gũ giai hăng cữ (Tình Yêu Son Sắt)
+           Gũ giai hăng cữ (Tình Yêu Son Sắt)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -1995,7 +1995,7 @@ Nhanh đi cùng chúng tôi <br/>
             padding-bottom: 5px;
           \"
         >
-          💔 Anăm tĩ dua ta hoa sơi hrũp goh (Nỗi buồn Tình phai)
+           Anăm tĩ dua ta hoa sơi hrũp goh (Nỗi buồn Tình phai)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2043,7 +2043,7 @@ Nhanh đi cùng chúng tôi <br/>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💎 DĂNG ADƠI (NHÌN EM)
+                     DĂNG ADƠI (NHÌN EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Hmữ mơng ataih kar hang jua blang<br>
@@ -2084,7 +2084,7 @@ Anh ngắm em, da em đẹp như chim a<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🎁 PƠHRUP BRƠI KƠ ADƠI HIAM (LÀM ĐẸP CHO EM)
+                     PƠHRUP BRƠI KƠ ADƠI HIAM (LÀM ĐẸP CHO EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2135,7 +2135,7 @@ Em như sao đêm lung linh<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💕 AYONG JŨ (ANH YÊU)
+                     AYONG JŨ (ANH YÊU)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Ayong jũ rơbũk kơ blan<br>
@@ -2173,7 +2173,7 @@ Năm nay nhiều gái mến.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    💬 ADƠI RƠNGOT (EM NHỚ)
+                     ADƠI RƠNGOT (EM NHỚ)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">Ơ ayong, adơi kiăng rơngot đơi anai<br>
@@ -2208,7 +2208,7 @@ Em nhớ anh từng ngày, anh ơi...<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😔 DUAH BNAI HIAM BIĂ (TÌM EM)
+                     DUAH BNAI HIAM BIĂ (TÌM EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2249,7 +2249,7 @@ Tôi đi tìm em, người đẹp ơi.<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🔮 ƠI ADƠI (HỠI EM)
+                     ƠI ADƠI (HỠI EM)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2288,7 +2288,7 @@ Hỡi người em gái ta thương<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    🏃‍♂️ KÂO NAO TRUH (TÔI ĐANG ĐẾN)
+                     KÂO NAO TRUH (TÔI ĐANG ĐẾN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2327,7 +2327,7 @@ Tôi lấy cho bằng được<br>
         "body": `
             <div style=\"font-family: 'Times New Roman', serif; padding: 30px; margin: 20px auto; max-width: 800px; border: 1px solid oklch(0.80 0.02 90); border-radius: 8px; background-color: oklch(0.96 0.02 90); color: oklch(0.18 0.02 80); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05); line-height: 1.6;\">
                 <h2 style=\"color: oklch(0.60 0.15 80); font-size: 1.8em; margin-bottom: 15px; border-bottom: 2px solid oklch(0.85 0.02 90); padding-bottom: 5px;\">
-                    😢 AI DUIL (THAN THÂN TRÁCH PHẬN)
+                     AI DUIL (THAN THÂN TRÁCH PHẬN)
                 </h2>
                 <p style=\"margin-bottom: 15px;\">
                     <strong>Gốc (Jrai):</strong> <em style=\"color: oklch(0.60 0.15 80); font-style: italic; display: block; margin-left: 15px;\">
@@ -2408,7 +2408,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          👹 Cây Nêu và Con Ma Đói
+           Cây Nêu và Con Ma Đói
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2488,7 +2488,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🥁 Bài học về Khiêm nhường (Cồng Chiêng Thần)
+           Bài học về Khiêm nhường (Cồng Chiêng Thần)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2571,7 +2571,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌞 Tình yêu và Khát vọng chinh phục (Di Ông)
+           Tình yêu và Khát vọng chinh phục (Di Ông)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2652,7 +2652,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌋 Nguồn gốc Núi Chư Đăng Ya (Anh hùng K’Đu)
+           Nguồn gốc Núi Chư Đăng Ya (Anh hùng K’Đu)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2740,7 +2740,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌼 Sự tích Hoa Dã Quỳ (Tình yêu H'Linh và K'Lang)
+           Sự tích Hoa Dã Quỳ (Tình yêu H'Linh và K'Lang)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2818,7 +2818,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          ⚡ Trí tuệ và Sức mạnh (Đăm Dong đánh Thần Sét)
+           Trí tuệ và Sức mạnh (Đăm Dong đánh Thần Sét)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2898,7 +2898,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          ✨ Sức mạnh của Lòng tốt (Truyện Cây Nêu Thần)
+           Sức mạnh của Lòng tốt (Truyện Cây Nêu Thần)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -2975,7 +2975,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🐘 Biểu tượng Sức mạnh (Truyện Voi Thần)
+           Biểu tượng Sức mạnh (Truyện Voi Thần)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3050,7 +3050,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🔥 Ama ia, ama hluh (Thần linh Tự nhiên)
+           Ama ia, ama hluh (Thần linh Tự nhiên)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3125,7 +3125,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🤝 Agong dơi dơi alinh lẽ ngăn (Tình Anh Em)
+           Agong dơi dơi alinh lẽ ngăn (Tình Anh Em)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3209,7 +3209,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          💪 Ngã dleh, rơ beh bong (Giá trị của Mồ hôi)
+           Ngã dleh, rơ beh bong (Giá trị của Mồ hôi)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3282,7 +3282,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          👋 Mã tơn gan apan drơi (Niềm vui Hội ngộ)
+           Mã tơn gan apan drơi (Niềm vui Hội ngộ)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3354,7 +3354,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌱 Kơ yây anet nhu guen tơ pă (Dạy dỗ từ Thơ ấu)
+           Kơ yây anet nhu guen tơ pă (Dạy dỗ từ Thơ ấu)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3428,7 +3428,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🌍 Hrơi hngoan siu ia (Cội nguồn Đất mẹ)
+           Hrơi hngoan siu ia (Cội nguồn Đất mẹ)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3509,7 +3509,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          👑 Hlang ia tơ đeh, h’lang pơ tao kơ niê (Trật tự Buôn làng) 
+           Hlang ia tơ đeh, h’lang pơ tao kơ niê (Trật tự Buôn làng) 
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3581,7 +3581,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          🏡 Kon chim mầu, gu mạ nui mâu plơi (Nơi an cư)
+           Kon chim mầu, gu mạ nui mâu plơi (Nơi an cư)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
@@ -3655,7 +3655,7 @@ Anh Duil ơi<br>
             padding-bottom: 5px;
           \"
         >
-          💧 Amania a nai, ama phă ia pơm (Biết ơn Nguồn sống)
+           Amania a nai, ama phă ia pơm (Biết ơn Nguồn sống)
         </h2>
       
         <p style=\"margin-bottom: 15px;\">
